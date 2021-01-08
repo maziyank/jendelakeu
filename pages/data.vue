@@ -1,54 +1,49 @@
 <template>
-  <div class="container">
-    <section class="section">
-      <div class="columns">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3 has-text-grey">Laporan Keuangan</h2>
-        </div>
-        <div class="column is-one-fifth">
-          <b-autocomplete
-            rounded
-            v-model="filter"
-            :data="[]"
-            placeholder="Cari Entitas"
-            icon="magnify"
-            clearable
-            @select="(option) => (selected = option)"
-          >
-            <template slot="empty">No results found</template>
-          </b-autocomplete>
-        </div>
+  <section class="section">
+    <div class="columns">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-grey">Laporan Keuangan</h2>
       </div>
-      <NuxtLink
-        :to="`/detail/${report.id}`"
-        :key="key"
-        v-for="(report, key) of filteredReports"
-      >
-        <Card          
-          :title="report.title"
-          :image="report.image"
-          :description="report.description"
-        />
-      </NuxtLink>
-      <b-pagination
-        style="margin-bottom: 80px"
-        :total="reports.length"
-        v-model="currentPage"
-        :range-before="3"
-        :range-after="3"
-        :simple="false"
-        :rounded="false"
-        :per-page="perPage"
-        icon-prev="chevron-left"
-        icon-next="chevron-right"
-        aria-next-label="Next page"
-        aria-previous-label="Previous page"
-        aria-page-label="Page"
-        aria-current-label="Current page"
-      >
-      </b-pagination>
-    </section>
-  </div>
+      <div class="column is-one-fifth">
+        <b-input
+          rounded
+          v-model="filter"
+          type="text"
+          placeholder="Cari Entitas"
+          icon-right="magnify"
+        >
+        </b-input>
+      </div>
+    </div>
+    <NuxtLink
+      :to="`/detail/${report.id}`"
+      :key="key"
+      v-for="(report, key) of filteredReports"
+    >
+      <Card
+        :title="report.title"
+        :image="report.image"
+        :description="report.description"
+      />
+    </NuxtLink>
+    <b-pagination
+      style="margin-bottom: 80px"
+      :total="reports.length"
+      v-model="currentPage"
+      :range-before="3"
+      :range-after="3"
+      :simple="false"
+      :rounded="false"
+      :per-page="perPage"
+      icon-prev="chevron-left"
+      icon-next="chevron-right"
+      aria-next-label="Next page"
+      aria-previous-label="Previous page"
+      aria-page-label="Page"
+      aria-current-label="Current page"
+    >
+    </b-pagination>
+  </section>
 </template>
 
 <script>
@@ -62,7 +57,7 @@ export default {
       reports: [],
       filteredReports: [],
       currentPage: 1,
-      perPage: 3,
+      perPage: 5,
     };
   },
   watch: {

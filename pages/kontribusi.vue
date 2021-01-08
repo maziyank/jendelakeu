@@ -1,5 +1,4 @@
 <template>
-  <div class="container">
     <section class="section">
       <h2 class="title is-3 has-text-grey">Berkontribusi</h2>
       <p>
@@ -46,5 +45,4 @@
         of Lorem Ipsum.
       </p>
     </section>
-  </div>
 </template>

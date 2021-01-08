@@ -1,3 +1,11 @@
 html {
     background: hsl(0, 0%, 94%);
 }
+
+.section{
+    padding: 16px 40px;
+}
+
+a.navbar-item {
+    font-weight: 500;
+}
