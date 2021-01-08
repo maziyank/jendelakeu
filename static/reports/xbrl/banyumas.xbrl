@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml xmlns:xgrl="http://www.xbrl.org/2003/instance" version="1.0" encoding="UTF-8">
+   <laporan>
+   <umum>
+      <namaentitas>Pemerintah Kabupaten Banyumas</namaentitas>
+      <kodeentitas>BMS</kodeentitas>
+      <tahun>2014</tahun>
+      <alamat>Jl Sawo Kota Banyumas</alamat>
+      <gubernur>ACHMAD HUSEIN</gubernur>
+   </umum>
+
+  <neraca>
+      <akun type="1110"><kini>358027399212.40</kini><lalu>353183383735.00</lalu></akun>
+      <akun type="1120"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="1130"><kini>84928158598.70</kini><lalu>81841805474.20</lalu></akun>
+      <akun type="1140"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="1150"><kini>-39527951901.31</kini><lalu>-33069535279.58</lalu></akun>
+      <akun type="1160"><kini>134605227.00</kini><lalu>82209926.00</lalu></akun>
+      <akun type="1170"><kini>23629125686.77</kini><lalu>25570071060.29</lalu></akun>
+      <akun type="1210"><kini>6960080414.70</kini><lalu>6032579188.00</lalu></akun>
+      <akun type="1220"><kini>155851442386.32</kini><lalu>124058652125.32</lalu></akun>
+      <akun type="1310"><kini>2321406492842.00</kini><lalu>2313347121804.00</lalu></akun>
+      <akun type="1320"><kini>551770846488.69</kini><lalu>470906264545.69</lalu></akun>
+      <akun type="1330"><kini>1187362372960.56</kini><lalu>1040502727829.56</lalu></akun>
+      <akun type="1340"><kini>1239253172324.00</kini><lalu>1079414695442.00</lalu></akun>
+      <akun type="1350"><kini>105743601320.36</kini><lalu>91997206993.58</lalu></akun>
+      <akun type="1360"><kini>3277421273.00</kini><lalu>24587199591.00</lalu></akun>
+      <akun type="1370"><kini>-1536228571833.95</kini><lalu>0</lalu></akun>
+      <akun type="1510"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="1520"><kini>109073514465.00</kini><lalu>116409008465.00</lalu></akun>
+      <akun type="1530"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="1531"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="1540"><kini>2868780309.74</kini><lalu>13859944095.07</lalu></akun>
+      <akun type="2110"><kini>93639077.00</kini><lalu>126399944.00</lalu></akun>
+      <akun type="2120"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="2130"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="2140"><kini>464313377.84</kini><lalu>426519907.25</lalu></akun>
+      <akun type="2150"><kini>18471891832.98</kini><lalu>1257470136.00</lalu></akun>
+      <akun type="2160"><kini>39976890308.00</kini><lalu>57844890075.00</lalu></akun>
+      <akun type="2210"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="2220"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="3110"><kini>4515523755178.16</kini><lalu>5649068054932.88</lalu></akun>
+      <akun type="3120"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="3130"><kini>0</kini><lalu>0</lalu></akun>
+   </neraca>
+
+   <operasional>
+      <akun type="8110"><kini>113393999783.00</kini><lalu>126105567806.00</lalu></akun>
+      <akun type="8120"><kini>43966984590.00</kini><lalu>36063637989.00</lalu></akun>
+      <akun type="8130"><kini>20567807599.00</kini><lalu>17430773198.50</lalu></akun>
+      <akun type="8140"><kini>261743353061.31</kini><lalu>170443073347.95</lalu></akun>
+      <akun type="8211"><kini>49415131936.00</kini><lalu>58503432693.00</lalu></akun>
+      <akun type="8212"><kini>1890143402.00</kini><lalu>6278012432.00</lalu></akun>
+      <akun type="8213"><kini>1224710992000.00</kini><lalu>1127939938000.00</lalu></akun>
+      <akun type="8214"><kini>82519140000.00</kini><lalu>78662730000.00</lalu></akun>
+      <akun type="8221"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="8222"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="8223"><kini>320319844000.00</kini><lalu>315634526000.00</lalu></akun>
+      <akun type="8231"><kini>121875968569.00</kini><lalu>97814520876.21</lalu></akun>
+      <akun type="8232"><kini>20877802431.00</kini><lalu>0</lalu></akun>
+      <akun type="8233"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="8241"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="8242"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="8243"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="8310"><kini>152481800843.00</kini><lalu>42359605915.00</lalu></akun>
+      <akun type="8320"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="8330"><kini>49439687475.00</kini><lalu>44298128158.00</lalu></akun>
+      <akun type="9110"><kini>1303397627781.98</kini><lalu>1162648705944.00</lalu></akun>
+      <akun type="9120"><kini>599053358294.95</kini><lalu>396458556814.49</lalu></akun>
+      <akun type="9130"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="9140"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="9150"><kini>62570682375.00</kini><lalu>77905158942.00</lalu></akun>
+      <akun type="9160"><kini>9313247652.00</kini><lalu>3619410000.00</lalu></akun>
+      <akun type="9170"><kini>128878104573.75</kini><lalu>0</lalu></akun>
+      <akun type="9180"><kini>7299868772.73</kini><lalu>31214236125.18</lalu></akun>
+      <akun type="9200"><kini>72503957986.00</kini><lalu>68769737191.00</lalu></akun>
+      <akun type="9190"><kini>562498773.30</kini><lalu>451283535.00</lalu></akun>
+      <akun type="8410"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="8420"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="8430"><kini>0</kini><lalu>1172768311.55</lalu></akun>
+      <akun type="9310"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="9320"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="9330"><kini>3630324020</kini><lalu>25831813541.44</lalu></akun>
+      <akun type="8510"><kini>0</kini><lalu>0</lalu></akun>
+      <akun type="9410"><kini>2210497575.00</kini><lalu>4670462226.00</lalu></akun>
+   </operasional>
+
+   <realisasianggaran>
+      <akun type="4110"><anggaran>105300000000.00</anggaran> <realisasi>110189330128.00</realisasi></akun>
+      <akun type="4120"><anggaran>43785757779.00</anggaran> <realisasi>43892027090.00</realisasi></akun>
+      <akun type="4130"><anggaran>11674209360.00</anggaran> <realisasi>11775017338.00</realisasi></akun>
+      <akun type="4140"><anggaran>217154882190.00</anggaran> <realisasi>269741314086.40</realisasi></akun>
+      <akun type="4211"><anggaran>70082876487.00</anggaran> <realisasi>49415131936.00</realisasi></akun>
+      <akun type="4212"><anggaran>1118282877.00</anggaran> <realisasi>1890143402.00</realisasi></akun>
+      <akun type="4213"><anggaran>1224710992000.00</anggaran> <realisasi>1224710992000.00</realisasi></akun>
+      <akun type="4214"><anggaran>82519140000.00</anggaran> <realisasi>82519140000.00</realisasi></akun>
+      <akun type="4221"><anggaran>0</anggaran> <realisasi>0</realisasi></akun>
+      <akun type="4222"><anggaran>0</anggaran> <realisasi>0</realisasi></akun>
+      <akun type="4223"><anggaran>320319844000.00</anggaran> <realisasi>320319844000.00</realisasi></akun>
+      <akun type="4231"><anggaran>129579391134.00</anggaran> <realisasi>121875968569.00</realisasi></akun>
+      <akun type="4232"><anggaran>0</anggaran> <realisasi>20877802431.00</realisasi></akun>
+      <akun type="4233"><anggaran>0</anggaran> <realisasi>0</realisasi></akun>
+      <akun type="4241"><anggaran>0</anggaran> <realisasi>0</realisasi></akun>
+      <akun type="4242"><anggaran>0</anggaran> <realisasi>0</realisasi></akun>
+      <akun type="4243"><anggaran>0</anggaran> <realisasi>0</realisasi></akun>
+      <akun type="4310"><anggaran>0</anggaran> <realisasi>1778000000.00</realisasi></akun>
+      <akun type="4320"><anggaran>0</anggaran> <realisasi>0</realisasi></akun>
+      <akun type="4330"><anggaran>49689964000.00</anggaran> <realisasi>49439687475.00</realisasi></akun>
+      <akun type="5110"><anggaran>1395296819343.00</anggaran><realisasi>1298564680518.00</realisasi></akun>
+      <akun type="5120"><anggaran>547191940824.00</anggaran><realisasi>482193159458.00</realisasi></akun>
+      <akun type="5130"><anggaran>0</anggaran><realisasi>0</realisasi></akun>
+      <akun type="5140"><anggaran>0</anggaran><realisasi>0</realisasi></akun>
+      <akun type="5150"><anggaran>97415832324.00</anggaran><realisasi>62570682375.00</realisasi></akun>
+      <akun type="5160"><anggaran>12788190000.00</anggaran><realisasi>9313247652.00</realisasi></akun>
+      <akun type="5210"><anggaran>20000446000.00</anggaran><realisasi>1556351169.00</realisasi></akun>
+      <akun type="5220"><anggaran>117053809967.00</anggaran><realisasi>87010802628.00</realisasi></akun>
+      <akun type="5230"><anggaran>133781939078.00</anggaran><realisasi>120096753202.00</realisasi></akun>
+      <akun type="5240"><anggaran>157266713174.00</anggaran><realisasi>146102387720.00</realisasi></akun>
+      <akun type="5250"><anggaran>22564129330.00</anggaran><realisasi>5398603922.00</realisasi></akun>
+      <akun type="5260"><anggaran>0</anggaran><realisasi>0</realisasi></akun>
+      <akun type="5310"><anggaran>4409501555.00</anggaran><realisasi>15844594.00</realisasi></akun>
+      <akun type="6110"><anggaran>0</anggaran><realisasi>0</realisasi></akun>
+      <akun type="6120"><anggaran>0</anggaran><realisasi>0</realisasi></akun>
+      <akun type="6210"><anggaran>0</anggaran><realisasi>0</realisasi></akun>
+      <akun type="6220"><anggaran>75296486000.00</anggaran><realisasi>71650726987.00</realisasi></akun>
+      <akun type="6230"><anggaran>1349811000.00</anggaran><realisasi>853230999.00</realisasi></akun>
+      <akun type="7110"><anggaran>352480278768.00</anggaran><realisasi>352480276768.00</realisasi></akun>
+      <akun type="7120"><anggaran>0</anggaran><realisasi>0</realisasi></akun>
+      <akun type="7130"><anggaran>0</anggaran><realisasi>0</realisasi></akun>
+      <akun type="7140"><anggaran>0</anggaran><realisasi>0</realisasi></akun>
+      <akun type="7150"><anggaran>500000000.00</anggaran><realisasi>0</realisasi></akun>
+      <akun type="7210"><anggaran>0</anggaran><realisasi>0</realisasi></akun>
+      <akun type="7220"><anggaran>23000000000.00</anggaran><realisasi>23000000000.00</realisasi></akun>
+      <akun type="7230"><anggaran>0</anggaran><realisasi>0</realisasi></akun>
+      <akun type="7240"><anggaran>1500000000.00</anggaran><realisasi>1490000000.00</realisasi></akun>
+      <akun type="7250"><anggaran>0</anggaran><realisasi>0</realisasi></akun>
+   </realisasianggaran>
+
+<sal>
+    <akun type="PS010"><kini>352480276768.00</kini><lalu>331470960480.00</lalu></akun>
+    <akun type="PS020"><kini>352480276768.00</kini><lalu>331470960480.00</lalu></akun>
+    <akun type="PS030"><kini>351088203999.40</kini><lalu>352480276768.00</lalu></akun>
+    <akun type="PS040"><kini>0</kini><lalu>0</lalu></akun>
+    <akun type="PS050"><kini>0</kini><lalu>0</lalu></akun>
+ </sal>
+
+ <ekuitas>
+    <akun type="PE010"><kini>5649068054932.88</kini><lalu>5191439289032.85</lalu></akun>
+    <akun type="PE020"><kini>273782487884.60</kini><lalu>351137350408.10</lalu></akun>
+    <akun type="PE031"><kini>0</kini><lalu>0</lalu></akun>
+    <akun type="PE032"><kini>0</kini><lalu>0</lalu></akun>
+    <akun type="PE033"><kini>0</kini><lalu>0</lalu></akun>
+    <akun type="PE034"><kini>0</kini><lalu>0</lalu></akun>
+    <akun type="PE035"><kini>0</kini><lalu>0</lalu></akun>
+    <akun type="PE036"><kini>-1407326787639.32</kini><lalu>106491415491.93</lalu></akun>
+ </ekuitas>
+
+ <aruskas>
+  <akun type="AOM01"><kini>110189330128.00</kini><lalu>111290149783.00</lalu></akun>
+   <akun type="AOM02"><kini>43892027090.00</kini><lalu>35193668496.00</lalu></akun>
+   <akun type="AOM03"><kini>11775017338.00</kini><lalu>10578804726.00</lalu></akun>
+   <akun type="AOM04"><kini>268699895087.40</kini><lalu>150227842914.00</lalu></akun>
+   <akun type="AOM05"><kini>49415131936.00</kini><lalu>58503432693.00</lalu></akun>
+   <akun type="AOM06"><kini>1890143402.00</kini><lalu>6278012432.00</lalu></akun>
+   <akun type="AOM07"><kini>1224710992000.00</kini><lalu>1127939938000.00</lalu></akun>
+   <akun type="AOM08"><kini>82519140000.00</kini><lalu>78662730000.00</lalu></akun>
+   <akun type="AOM09"><kini>0</kini><lalu>0.00</lalu></akun>
+   <akun type="AOM10"><kini>320319844000.00</kini><lalu>315634526000.00</lalu></akun>
+   <akun type="AOM11"><kini>121875968569.00</kini><lalu>97969873634.00</lalu></akun>
+   <akun type="AOM12"><kini>20877802431.00</kini><lalu>0</lalu></akun>
+   <akun type="AOM13"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="AOM14"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="AOM15"><kini>0</kini><lalu>0</lalu></akun>   
+   <akun type="AOM16"><kini>1778000000.00</kini><lalu>0</lalu></akun>
+   <akun type="AOM17"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="AOM18"><kini>49439687475.00</kini><lalu>44298128158.00</lalu></akun>
+   <akun type="AOM19"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="AOK01"><kini>1298564680518.00</kini><lalu>1181577521238.00</lalu></akun>
+   <akun type="AOK02"><kini>482193159458.00</kini><lalu>372329636302.00</lalu></akun>
+   <akun type="AOK03"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="AOK04"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="AOK05"><kini>62570682375.00</kini><lalu>78211037942.00</lalu></akun>
+   <akun type="AOK06"><kini>9313247652.00</kini><lalu>3619410000.00</lalu></akun>   
+   <akun type="AOK07"><kini>15844594.00</kini><lalu>356646000.00</lalu></akun>
+   <akun type="AOK08"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="AOK09"><kini>71650726987.00</kini><lalu>67959057341.00</lalu></akun>
+   <akun type="AOK10"><kini>853230999.00</kini><lalu>810679850.00</lalu></akun>
+   <akun type="AOK11"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="AOK12"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="AOK13"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="AOK14"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="AIM01"><kini>0</kini><lalu>22926204782.00</lalu></akun>
+   <akun type="AIM02"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="AIM03"><kini>370460000.00</kini><lalu>639270000.00</lalu></akun>
+   <akun type="AIM04"><kini>663758999.00</kini><lalu>0</lalu></akun>
+   <akun type="AIM05"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="AIM06"><kini>7200000.00</kini><lalu>0</lalu></akun>
+   <akun type="AIM07"><kini>0</kini><lalu>419698400.00</lalu></akun>
+   <akun type="AIM08"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="AIM09"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="AIK01"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="AIK02"><kini>1556351169.00</kini><lalu>1390450720.00</lalu></akun>
+   <akun type="AIK03"><kini>87010802628.00</kini><lalu>54154766712.00</lalu></akun>
+   <akun type="AIK04"><kini>120096753202.00</kini><lalu>141955768170.00</lalu></akun>
+   <akun type="AIK05"><kini>146102387720.00</kini><lalu>113011691498.00</lalu></akun>
+   <akun type="AIK06"><kini>5398603922.00</kini><lalu>2676297957.00</lalu></akun>
+   <akun type="AIK07"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="AIK08"><kini>24490000000.00</kini><lalu>20000000000.00</lalu></akun>
+   <akun type="AIK09"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APM01"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APM02"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APM03"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APM04"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APM05"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APM06"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APM07"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APM08"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APM09"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APK01"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APK02"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APK03"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APK04"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APK05"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APK06"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APK07"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APK08"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="APK09"><kini>0</kini><lalu>1500000000.00</lalu></akun>
+   <akun type="ATM01"><kini>136338044821.00</kini><lalu>166120683385.00</lalu></akun>
+   <akun type="ATM02"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="ATM03"><kini>0</kini><lalu>0</lalu></akun>
+   <akun type="ATM04"><kini>1543531933.00</kini><lalu>184886709.00</lalu></akun>
+   <akun type="ATM05"><kini>863894706.00</kini><lalu>551558204.00</lalu></akun>
+   <akun type="ATK01"><kini>136338044821.00</kini><lalu>166120683385.00</lalu></akun>
+   <akun type="ATK02"><kini>1526735247.00</kini><lalu>373949743.00</lalu></akun>
+   <akun type="ATK03"><kini>391689715.00</kini><lalu>847417206.00</lalu></akun>
+   <akun type="AS01"><kini>351609502333.00</kini><lalu>331085108081.00</lalu></akun>
+   <akun type="AS02"><kini>470651333.00</kini><lalu>576560511.00</lalu></akun>
+   <akun type="AS03"><kini>476224035.00</kini><lalu>997320891.00</lalu></akun>
+   <akun type="AS04"><kini>6374092603.00</kini><lalu>0</lalu></akun>
+</aruskas>
+
+</laporan>
+
+
+<calk>
+<chapter id="ch_01">
+   <title>Pendahuluan</title>
+   <item id="ch_01_1">
+      <title>Maksud dan Tujuan Penyusunan Laporan Keuangan</title>
+      <content> &lt;p&gt;Berdasarkan Undang-Undang Nomor 17 Tahun 2013, kepala satuan kerja perangkat daerah (SKPD) selaku pengguna anggaran mempunyai tugas menyusun dan menyampaikan laporan keuangan. Laporan keuangan SKPD tersebut kemudian dikonsolidasikan menjadi laporan keuangan pemerintah daerah.&lt;/p&gt; &lt;p&gt;Laporan keuangan disusun dan disajikan berdasarkan Standar Akuntansi Pemerintahan (SAP) yang ditetapkan berdasarkan Peraturan Pemerintah Nomor 71 Tahun 2010 tentang Standar Akuntansi Pemerintahan. SAP memberikan dua pilihan basis akuntansi, yakni (1) Basis Akrual, atau (2) Basis Kas Menuju Akrual. Basis Kas Menuju Akrual boleh diterapkan paling lambat sampai dengan tahun anggaran 2014 sedangkan Basis Akrual wajib diterapkan mulai tahun anggaran 2015. Pada tahun anggaran 2014, Pemerintah Kabupaten Banyumas mulai menerapkan SAP Berbasis Akrual.&lt;/p&gt; Laporan Keuangan Pemerintah Kabupaten Banyumas Tahun Anggaran 2014 pada hakikatnya merupakan perwujudan transparansi dan akuntabilitas pengelolaan keuangan daerah. Laporan keuangan disusun untuk menyediakan informasi yang relevan mengenai posisi keuangan dan seluruh transaksi yang dilakukan selama satu periode pelaporan. Pemerintah Kabupaten Banyumas mempunyai kewajiban untuk melaporkan upaya-upaya yang telah dilakukan serta hasil yang telah dicapai dalam pelaksanaan kegiatan secara sistematis dan terstruktur pada suatu periode pelaporan untuk kepentingan antara lain: &lt;ol&gt; &lt;li&gt;&lt;strong&gt;Akuntabilitas&lt;/strong&gt;: Mempertanggungjawabkan pengelolaan sumber daya serta pelaksanaan kebijakan yang dipercayakan kepada pemerintah daerah dalam mencapai tujuan yang telah ditetapkan secara periodik.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Manajemen&lt;/strong&gt;: Membantu para pengguna laporan keuangan untuk mengevaluasi pelaksanaan kegiatan suatu pemerintah daerah dalam periode pelaporan sehingga memudahkan fungsi perencanaan, pengelolaan dan pengendalian atas seluruh aset, kewajiban, dan ekuitas dana pemerintah daerah untuk kepentingan masyarakat.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Transparansi&lt;/strong&gt;: Memberikan informasi keuangan yang terbuka dan jujur kepada masyarakat berdasarkanpertimbangan bahwa masyarakat memiliki hak untuk mengetahui secara terbuka danmenyeluruh atas pertanggungjawaban pemerintah daerah dalam pengelolaan sumber daya yang dipercayakan kepadanya dan tingkat ketaatannya pada peraturan perundang-undangan.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Keseimbangan antar generasi: &lt;/strong&gt;Membantu para pengguna laporan untuk mengetahui apakah penerimaan pemerintah daerah pada periode laporan cukup untuk membiayai seluruh pengeluaran yang dialokasikan dan apakah generasi yang akan datang diasumsikan ikut menanggung beban pengeluaran tersebut.&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;Laporan keuangan Pemerintah Kabupaten Banyumas tahun anggaran 2014 yang disusun berdasarkan SAP Berbasis Akrual terdiri atas:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;Laporan Realisasi Anggaran (LRA), yang menyajikan ikhtisar sumber, alokasi dan pemakaian sumber daya, yang menggambarkan perbandingan antara anggaran dan realisasinya dalam satu periode laporan.&lt;/li&gt; &lt;li&gt;Laporan Perubahan Saldo Anggaran Lebih (SAL), yang menyajikan informasi kenaikan atau penurunan Saldo Anggaran Lebih tahun pelaporan dibandingkan dengan tahun sebelumnya.&lt;/li&gt; &lt;li&gt;Neraca, yang menggambarkan posisi keuangan mengenai aset, kewajiban dan ekuitas pada tanggal tertentu.&lt;/li&gt; &lt;li&gt;Laporan Operasional (LO), yang menyajikan ikhtisar sumber daya ekonomi yang menambah ekuitas dan penggunaannya yang dikelola oleh pemerintah daerah untuk kegiatan penyelenggaraan pemerintahan dalam satu periode pelaporan.&lt;/li&gt; &lt;li&gt;Laporan Arus Kas (LAK), yang menyajikan informasi kas sehubungan dengan aktivitas operasional, aktivitas investasi aset nonkeuangan, aktivitas pembiayaan dan aktivitas transaksi non anggaran yang menggambarkan saldo awal, penerimaan, pengeluaran dan saldo akhir kas pada periode tertentu&lt;/li&gt; &lt;li&gt;Laporan Perubahan Ekuitas (LPE), yang menyajikan informasi kenaikan atau penurunan ekuitas tahun pelaporan dibandingkan dengan tahun sebelumnya.&lt;/li&gt; &lt;li&gt;Catatan atas Laporan Keuangan (CaLK), yang berisi penjelasan naratif atas informasi kuantitatif yang bersifat moneter yang disajikan pada LRA, Laporan Perubahan SAL, Neraca, LO, LAK, dan LPE.&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;Laporan Keuangan Pemerintah Daerah (LKPD) disusun untuk menyediakan informasi yang relevan mengenai posisi keuangan dan seluruh transaksi yang dilakukan oleh pemerintah daerah selama satu periode pelaporan. LKPD terutama digunakan untuk membandingkan realisasi pendapatan dan belanja dengan anggaran yang telah ditetapkan, menilai kondisi keuangan, menilai efektifitas dan efisiensi pemerintah daerah, dan membantu menentukan ketaatannya terhadap peraturan perundang-undangan. Melalui LKPD Kabupaten Banyumas, para pengguna laporan diharapkan dapat memperoleh informasi untuk menilai akuntabilitas dan membuat keputusan ekonomi, sosial, maupun politik. LKPD Kabupaten Banyumas memuat informasi mengenai:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;informasi mengenai posisi sumber daya ekonomi, kewajiban, dan ekuitas pemerintah;&lt;/li&gt; &lt;li&gt;informasi mengenai perubahan posisi sumber daya ekonomi, kewajiban, dan ekuitas pemerintah;&lt;/li&gt; &lt;li&gt;informasi mengenai sumber, alokasi, dan penggunaan sumber daya ekonomi;&lt;/li&gt; &lt;li&gt;informasi mengenai informasi mengenai ketaatan realisasi terhadap anggarannya;&lt;/li&gt; &lt;li&gt;informasi mengenai cara entitas pelaporan mendanai aktivitasnya dan memenuhi kebutuhan kasnya;&lt;/li&gt; &lt;li&gt;informasi mengenai potensi pemerintah untuk membiayai penyelenggaraan kegiatan pemerintahan;&lt;/li&gt; &lt;li&gt;informasi yang berguna untuk mengevaluasi kemampuan entitas pelaporan dalam mendanai aktivitasnya.&lt;/li&gt; &lt;/ol&gt; &lt;ol&gt; &lt;/ol&gt;        
+
+      </content>
+   </item>
+   <item id="ch_01_2">
+      <title>Landasan Hukum Penyusunan Laporan Keuangan</title>
+      <content> &lt;p&gt;Laporan Keuangan Pemerintah Kabupaten Banyumas TA 2013 disusun berdasarkan:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;Undang-Undang Nomor 13 Tahun 1950 tentang Pembentukan Daerah-Daerah Kabupaten dalam Lingkungan Provinsi Jawa Tengah.&lt;/li&gt; &lt;li&gt;Undang-Undang Nomor 17 Tahun 2003 tentang Keuangan Negara.&lt;/li&gt; &lt;li&gt;Undang-Undang Nomor 1 Tahun 2004 tentang Perbendaharaan Negara.&lt;/li&gt; &lt;li&gt;Undang-Undang Nomor 32 Tahun 2004 tentang Pemerintahan Daerah.&lt;/li&gt; &lt;li&gt;Peraturan Pemerintah Nomor 23 Tahun 2005 tentang Pengelolaan Keuangan Badan Layanan Umum.&lt;/li&gt; &lt;li&gt;Peraturan Pemerintah Nomor 56 Tahun 2005 tentang Sistem Informasi Keuangan Daerah.&lt;/li&gt; &lt;li&gt;Peraturan Pemerintah Nomor 58 Tahun 2005 tentang Pengelolaan Keuangan Daerah.&lt;/li&gt; &lt;li&gt;Peraturan Pemerintah Nomor 8 Tahun 2006 tentang Pelaporan Keuangan dan Kinerj Instansi Pemerintah.&lt;/li&gt; &lt;li&gt;Peraturan Pemerintah Nomor 71 Tahun 2010 tentang Standar Akuntansi Pemerintahan.&lt;/li&gt; &lt;li&gt;Peraturan Menteri Dalam Negeri Nomor 13 Tahun 2006 tentang Pedoman Pengelolaan Keuangan Daerah sebagaimana telah beberapa kali diubah terakhir dengan Peraturan Menteri Dalam Negeri Nomor 21 Tahun 2011 tentang Perubahan Kedua atas Peraturan Menteri Dalam Negeri Nomor 13 Tahun 2006 tentang Pedoman Pengelolaan Keuangan Daerah&lt;/li&gt; &lt;li&gt;Peraturan Daerah Kabupaten Banyumas Nomor 6 Tahun 2009 tentang Pedoman Pengelolaan Keuangan Daerah.&lt;/li&gt; &lt;li&gt;Peraturan Bupati Banyumas Nomor 108 Tahun 2010 tentang Kebijakan Akuntansi Pemerintah Daerah Kabupaten Banyumas sebagaimana telah diubah dengan Peraturan Bupati Banyumas Nomor 46 Tahun 2012 tentang Perubahan atas Peraturan Bupati Banyumas Nomor 108 Tahun 2010 tentang Kebijakan Akuntansi Pemerintah Daerah Kabupaten Banyumas.&lt;/li&gt; &lt;li&gt;Peraturan Bupati Banyumas Nomor 31 Tahun 2012 tentang Sistem dan Prosedur Pengelolaan Keuangan Daerah Kabupaten Banyumas.&lt;/li&gt; &lt;li&gt;Peraturan Bupati Banyumas Nomor 38 Tahun 2014 tentang Penyusutan Aset Tetap.&lt;/li&gt; &lt;li&gt;Peraturan Bupati Banyumas Nomor 65 Tahun 2014 tentang Pedoman Akuntansi dan Pelaporan Keuangan Tahun Anggaran 2014.&lt;/li&gt; &lt;/ol&gt;</content>
+   </item>
+</chapter>
+
+<chapter id="ch_02">
+   <title>Ekonomi Makro Kebijakan Keuangan dan Pencapaian Target APBD</title>
+   <item id="ch_02_1">
+      <title>Gambaran Umum Pemerintah Kabupaten Banyumas</title>
+      <content>This is &lt;b&gt;bold&lt;/b&gt;</content>
+   </item>
+   <item id="ch_02_2">
+      <title>Struktur Ekonomi</title>
+      <content>&lt;p&gt;Kondisi ekonomi makro Kabupaten Banyumas dapat dinilai dari pertumbuhan ekonomi dan nilai Produk Domestik Regional Bruto (PDRB) selama 5 tahun terakhir. Kondisi ekonomi makro Kabupaten Banyumas selama kurun waktu tahun 2009 sampai dengan 2013 cenderung mengalami peningkatan. Pada tahun 2009, laju pertumbuhan ekonomi sebesar 5,38 persen sedangkan pada tahun 2013 meningkat menjadi 5,97 persen.&lt;/p&gt; &lt;p&gt;Selama periode 2009-2013, nilai PDRB terus mengalami kenaikan seiring meningkatnya kegiatan perekonomian di wilayah Kabupaten Banyumas. Pada tahun 2013, nilai PDRB atas dasar harga berlaku mencapai Rp12,77 triliun. Secara nominal, PDRB Kabupaten Banyumas pada kurun waktu 2008-2013 mengalami kenaikan sebesar Rp4,42 triliun. Namun demikian kenaikan ini masih mengandung kenaikan harga barang dan jasa yang diproduksi selama kurun waktu tersebut. &lt;/p&gt; &lt;p&gt;Berdasarkan harga konstan 2000, nilai PDRB juga mengalami kenaikan dari Rp4,17 triliun pada tahun 2009 menjadi Rp5,22 triliun di tahun 2013. Hal ini menunjukkan, bahwa perekonomian Kabupaten Banyumas mengalami pertumbuhan yang positif. Kenaikan tersebut murni sebagai peningkatan produksi, karena nilai PDRB atas harga konstan telah terbebas dari pengaruh inflasi. &lt;/p&gt; &lt;p&gt;Struktur ekonomi suatu daerah/wilayah menggambarkan seberapa besar ketergantungan suatu daerah/wilayah terhadap kemampuan produksi dari setiap sektor ekonomi. Struktur ekonomi terbentuk dari nilai tambah yang diciptakan oleh masing-masing sektor. Dengan melihat kontribusi masing-masing sektor terhadap pembentukan PDRB, maka dapat diketahui seberapa besar peran suatu sektor dalam menunjang perekonomian daerah. &lt;/p&gt; &lt;p&gt;Selama lima tahun terakhir (2009-2013) struktur perekonomian Banyumas masih didominasi 4 (empat) sektor, yaitu: sektor pertanian; sektor industri; sektor perdagangan, hotel dan restoran; serta sektor jasa. Porsi sektor jasa-jasa bersama dengan sektor perdagangan, hotel dan restoran tiap tahun cenderung meningkat; sedangkan sektor industri pengolahan cenderung tetap atau bahkan menurun. Demikian pula kontribusi sektor pertanian tiap tahun mengalami penurunan, sebagai akibat menurunnya luas lahan produk pertanian yang tak secepat produk lain. &lt;/p&gt; &lt;p&gt;Fenomena ini menunjukan bahwa perekonomian Kabupaten Banyumas mengalami pergeseran dari perekonomian agraris menuju niaga jasa. Industrialisasi yang biasanya terjadi pada beberapa wilayah yang semula berbasis pertanian tidak sepenuhnya terjadi di Kabupaten Banyumas. Walaupun secara nominal sektor industri pengolahan berkembang tetapi kontribusinya cenderung menurun, sementara kontribusi gabungan sektor perdagangan dan jasa- jasa justru selalu meningkat merupakan salah satu indikator bahwa proses industrialisasi di Kabupaten Banyumas mengalami beberapa kendala. Hal ini mungkin terkait dengan kondisi wilayah Kabupaten Banyumas yang kurang menarik minat investor untuk menanamkan modal di sektor industri. PDRB Kabupaten Banyumas berdasarkan sektor/lapangan usaha disajikan pada Tabel 3.1.&lt;/p&gt; &lt;p&gt;Berdasarkan PDRB menurut sektor atas dasar harga berlaku tahun 2013, sektor yang mempunyai PDRB terbesar adalah sektor pertanian, yakni sebesar Rp2,716 triliun disusul berturut-turut oleh sektor jasa sebesar Rp2,314 triliun, sektor industri Rp2,052 triliun, dan sektor perdagangan sebesar Rp1,867 triliun. Hal ini memberi gambaran bahwa Kabupaten Banyumas merupakan daerah potensial untuk pertanian, jasa, industri, dan perdagangan.&lt;/p&gt;</content>
+   </item>
+   <item id="ch_02_3">
+      <title>Pertumbuhan Ekonomi dan Laju Inflasi</title>
+      <content>This is &lt;b&gt;bold&lt;/b&gt;</content>
+   </item>
+   <item id="ch_02_3">
+      <title>Kebijakan Keuangan</title>
+      <content>This is &lt;b&gt;bold&lt;/b&gt;</content>
+   </item>   
+</chapter>
+
+<calk-item type="1110">
+   &lt;p&gt;Saldo kas terdiri atas Kas di Kas Daerah, Kas di Bendahara Penerimaan, Kas di Bendahara Pengeluaran, dan Kas di BLUD dengan perincian sebagai berikut:&lt;/p&gt; &lt;table border="1"&gt; &lt;tr&gt; &lt;td valign="top"&gt;Kas&lt;/td&gt; &lt;td valign="top" &gt;31 Desember 2014 (Rp)&lt;/td&gt; &lt;td valign="top" &gt;31 Desember 2013(Rp)&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top" &gt;Kas di Kas Daerah&lt;/td&gt; &lt;td valign="top" align="right"&gt;303.135.747.509,00&lt;/td&gt; &lt;td valign="top" align="right"&gt;&lt;p&gt;343.577.913.415,00&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top" &gt;Kas di Bendahara Penerimaan&lt;/td&gt; &lt;td valign="top" align="right"&gt;470.651.333,00&lt;/td&gt; &lt;td valign="top" align="right"&gt;576.560.511,00&lt;/p&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top" &gt;Kas di Bendahara Pengeluaran&lt;/td&gt; &lt;td valign="top" align="right"&gt;476.224.035,00&lt;/td&gt; &lt;td valign="top" align="right"&gt;&lt;p&gt;997.320.891,00&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top" &gt;Kas di Badan Layanan Umum Daerah&lt;/td&gt; &lt;td valign="top" align="right"&gt;47.570.683.732,40&lt;/td&gt; &lt;td valign="top" align="right"&gt;8.031.588.918,00&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top" &gt;Kas Lainnya&lt;/td&gt; &lt;td valign="top" align="right"&gt;6.374.092.603,00&lt;/td&gt; &lt;td valign="top" align="right"&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top" &gt;&lt;/td&gt; &lt;td valign="top" align="right"&gt;358.027.399.212,40&lt;/td&gt; &lt;td valign="top" align="right"&gt;353.183.383.735,00&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;p&gt;Dari jumlah Kas sebesar Rp358.027.399.212,40 tersebut, Rp351.088.203.999,40 di antaranya merupakan Saldo Anggaran Lebih (SAL).&lt;/p&gt; &lt;p&gt;Kas yang merupakan SAL terdiri atas:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Kas di Kas Daerah sebesar Rp303.094.808.263,40; &lt;/li&gt; &lt;li&gt;Kas di Bendahara Pengeluaran sebesar Rp437.108.115,00; &lt;/li&gt; &lt;li&gt;Kas di BLUD sebesar Rp47.556.287.621,00.&lt;/li&gt; &lt;/ul&gt;
+</calk-item>
+</calk>
+
+
+</xml>
