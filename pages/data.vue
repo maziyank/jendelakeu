@@ -1,0 +1,98 @@
+<template>
+  <div class="container">
+    <section class="section">
+      <div class="columns">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-grey">Laporan Keuangan</h2>
+        </div>
+        <div class="column is-one-fifth">
+          <b-autocomplete
+            rounded
+            v-model="filter"
+            :data="[]"
+            placeholder="Cari Entitas"
+            icon="magnify"
+            clearable
+            @select="(option) => (selected = option)"
+          >
+            <template slot="empty">No results found</template>
+          </b-autocomplete>
+        </div>
+      </div>
+      <Card
+        v-for="(report, key) of filteredReports"
+        exact-active-class="is-active"
+        :key="key"
+        :title="report.title"
+        :image="report.image"
+        :description="report.description"
+      />
+      <b-pagination
+        style="margin-bottom: 80px"
+        :total="reports.length"
+        v-model="currentPage"
+        :range-before="3"
+        :range-after="3"
+        :simple="false"
+        :rounded="false"
+        :per-page="perPage"
+        icon-prev="chevron-left"
+        icon-next="chevron-right"
+        aria-next-label="Next page"
+        aria-previous-label="Previous page"
+        aria-page-label="Page"
+        aria-current-label="Current page"
+      >
+      </b-pagination>
+    </section>
+  </div>
+</template>
+
+<script>
+import Card from "./../components/Card";
+
+export default {
+  components: { Card },
+  data() {
+    return {
+      filter: "",
+      reports: [],
+      filteredReports: [],
+      currentPage: 1,
+      perPage: 3,
+    };
+  },
+  watch: {
+    currentPage: function (val) {
+      this.setPage(val, this.filter);
+    },
+    filter: function (val) {
+      this.setPage(this.currentPage, val);
+    },
+  },
+  async mounted() {
+    this.reports = await this.getReports();
+    this.setPage(this.currentPage, this.filter);
+  },
+  methods: {
+    setPage(page, filter) {
+      filter = filter.toLowerCase().trim();
+      const offset = (page - 1) * this.perPage;
+
+      this.filteredReports = this.reports
+        .filter((item) => {
+          return (
+            item.title.toLowerCase().includes(filter) ||
+            item.description.toLowerCase().includes(filter)
+          );
+        })
+        .slice(offset, offset + this.perPage);
+    },
+    async getReports() {
+      const resp = await fetch("./reports/index.json");
+      const reports = await resp.json();
+      return reports.data;
+    },
+  },
+};
+</script>
