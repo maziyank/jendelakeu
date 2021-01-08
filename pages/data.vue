@@ -19,14 +19,17 @@
           </b-autocomplete>
         </div>
       </div>
-      <Card
-        v-for="(report, key) of filteredReports"
-        exact-active-class="is-active"
+      <NuxtLink
+        :to="`/detail/${report.id}`"
         :key="key"
-        :title="report.title"
-        :image="report.image"
-        :description="report.description"
-      />
+        v-for="(report, key) of filteredReports"
+      >
+        <Card          
+          :title="report.title"
+          :image="report.image"
+          :description="report.description"
+        />
+      </NuxtLink>
       <b-pagination
         style="margin-bottom: 80px"
         :total="reports.length"
