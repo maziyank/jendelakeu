@@ -3,13 +3,16 @@
     <div class="card-content">
       <div class="media">
         <div class="media-left">
-          <figure class="image is-48x48">
+          <figure v-if="title" class="image is-48x48">
             <img :src="image" alt="Kabupaten Tegal" />
           </figure>
+          <b-skeleton v-else circle width="64px" height="64px"></b-skeleton>
         </div>
         <div class="media-content">
-          <p class="title is-4">{{ title }}</p>
-          <p class="subtitle is-6">{{ description }}</p>
+          <p v-if="title" class="title is-4">{{ title }}</p>
+          <b-skeleton v-else width="20%" animated></b-skeleton>
+          <p v-if="description" class="subtitle is-6">{{ description }}</p>
+          <b-skeleton v-else width="80%" animated></b-skeleton>
         </div>
       </div>
     </div>
@@ -18,6 +21,6 @@
 
 <script>
 export default {
-  props: ["title", "description", "image"],
+  props: ["title", "description", "image", "isLoading"],
 };
 </script>

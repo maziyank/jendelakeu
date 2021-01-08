@@ -55,9 +55,10 @@ export default {
     return {
       filter: "",
       reports: [],
-      filteredReports: [],
+      filteredReports: Array(5).fill({ title: null, description: null }),
       currentPage: 1,
       perPage: 5,
+      isLoading: false,
     };
   },
   watch: {
@@ -69,8 +70,10 @@ export default {
     },
   },
   async mounted() {
-    this.reports = await this.getReports();
-    this.setPage(this.currentPage, this.filter);
+    setTimeout(async () => {
+      this.reports = await this.getReports();
+      this.setPage(this.currentPage, this.filter);
+    }, 500);
   },
   methods: {
     setPage(page, filter) {
@@ -80,15 +83,18 @@ export default {
       this.filteredReports = this.reports
         .filter((item) => {
           return (
-            item.title.toLowerCase().includes(filter) ||
-            item.description.toLowerCase().includes(filter)
+            item?.title?.toLowerCase().includes(filter) ||
+            item?.description?.toLowerCase().includes(filter) ||
+            this.isLoading
           );
         })
         .slice(offset, offset + this.perPage);
     },
     async getReports() {
+      this.isLoading = true;
       const resp = await fetch("./reports/index.json");
       const reports = await resp.json();
+      this.isLoading = false;
       return reports.data;
     },
   },

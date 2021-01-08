@@ -1,21 +1,21 @@
 {
   "data": [{
-      "title": "Kab.Tegal",
-      "description": "Pemerintah Kabupaten Tegal, Jawa Tengah",
+      "title": "Depok",
+      "description": "Pemerintah Kota Depok, Jawa Barat",
       "file": "",
       "id": 1,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png"
     },
     {
-      "title": "Kab.Tegal",
-      "description": "Pemerintah Kabupaten Tegal, Jawa Tengah",
+      "title": "Kab.Kudus",
+      "description": "Pemerintah Kabupaten Kudus, Jawa Tengah",
       "file": "",
       "id": 2,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png"
     },
     {
-      "title": "Kab.Tegal",
-      "description": "Pemerintah Kabupaten Tegal, Jawa Tengah",
+      "title": "Kab.Rembang",
+      "description": "Pemerintah Kabupaten Rembang, Jawa Tengah",
       "file": "",
       "id": 3,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png"
@@ -28,8 +28,8 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png"
     },
     {
-      "title": "Kab.Tegal",
-      "description": "Pemerintah Kabupaten Tegal, Jawa Tengah",
+      "title": "Kab.Bogor",
+      "description": "Pemerintah Kabupaten Bogor, Jawa Barat",
       "file": "",
       "id": 5,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png"
