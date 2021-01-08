@@ -14,10 +14,16 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ["assets/style.css"],
+  css: [
+    "assets/style.css",
+    "node_modules/vue-ads-table-tree/dist/vue-ads-table-tree.css"
+  ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: [
+    { src: "~/plugins/vue-ads-table-tree.js", ssr: false },
+    { src: "~/plugins/chart.js", ssr: false }
+  ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -42,5 +48,7 @@ export default {
   content: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {}
+  build: {
+    // transpile: ["vue-ads-table-tree"]
+  }
 };
