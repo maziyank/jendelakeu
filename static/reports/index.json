@@ -1,45 +1,51 @@
 {
   "data": [{
-      "title": "Depok",
-      "description": "Pemerintah Kota Depok, Jawa Barat",
+      "title": "Kab. Banyumas",
+      "description": "Pemerintah Kabupaten Banyumas, Jawa Tengah",
       "file": "",
+      "id": 3302,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png",
+      "lastyear": 2020
+    },
+    {
+      "title": "Kab. Tangerang",
+      "description": "Pemerintah Kab. Tangerang, Banten",
+      "file": 3603,
       "id": 1,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png",
+      "lastyear": 2020
     },
     {
       "title": "Kab.Kudus",
       "description": "Pemerintah Kabupaten Kudus, Jawa Tengah",
       "file": "",
       "id": 2,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png",
+      "lastyear": 2020
     },
     {
       "title": "Kab.Rembang",
       "description": "Pemerintah Kabupaten Rembang, Jawa Tengah",
       "file": "",
       "id": 3,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png",
+      "lastyear": 2020
     },
     {
       "title": "Kab.Tegal",
       "description": "Pemerintah Kabupaten Tegal, Jawa Tengah",
       "file": "",
       "id": 4,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png",
+      "lastyear": 2020
     },
     {
       "title": "Kab.Bogor",
       "description": "Pemerintah Kabupaten Bogor, Jawa Barat",
       "file": "",
       "id": 5,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png"
-    },
-    {
-      "title": "Kab.Tegal X",
-      "description": "Pemerintah Kabupaten Tegal, Jawa Tengah",
-      "file": "",
-      "id": 6,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png",
+      "lastyear": 2020
     }
   ]
 }

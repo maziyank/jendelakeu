@@ -50,6 +50,8 @@ export default {
   data() {
     return {
       xbrlDoc: {},
+      idRegion: "",
+      year: "",
       tabsItems: [
         { title: "Overview", component: "Overview" },
         { title: "Kinerja Keuangan", component: "Kinerja" },
@@ -61,6 +63,22 @@ export default {
       ],
     };
   },
-  methods: {},
+  watch: {
+    $route: "loadXBRL",
+  },
+  mounted() {
+    this.loadXBRL();
+  },
+  methods: {
+    loadXBRL() {
+      const year = this.$route.query.tahun;
+      const idRegion = this.$route.params.id;
+      const url = `/reports/xbrl/${year}/${idRegion}.xbrl`;
+      return fetch(url)
+        .then((response) => response.text())
+        .then((str) => new window.DOMParser().parseFromString(str, "text/xml"))
+        .then((data) => console.log(data));
+    },
+  },
 };
 </script>

@@ -16,7 +16,7 @@
       </div>
     </div>
     <NuxtLink
-      :to="`/detail/${report.id}`"
+      :to="`/detail/${report.id}?tahun=${report.lastyear}`"
       :key="key"
       v-for="(report, key) of filteredReports"
     >
