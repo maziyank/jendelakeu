@@ -3,7 +3,7 @@
     <div class="columns">
       <div class="column is-four-fifths">
         <h2 class="title is-3 has-text-grey">
-          Kabupaten Something
+          {{ entityName }}
         </h2>
       </div>
       <div class="column is-one-fifth">
@@ -21,13 +21,14 @@
         :key="index"
         :label="tab.title"
       >
-        <component :is="tab.component" :ref="tab.component" :doc="xbrlDoc" />
+        <component :is="tab.component" :ref="tab.component" :doc.sync="xbrlDoc" />
       </b-tab-item>
     </b-tabs>
   </section>
 </template>
 
 <script>
+import xpath from 'xpath'
 import Overview from './overview'
 import Kinerja from './kinerja'
 import Neraca from './neraca'
@@ -54,8 +55,9 @@ export default {
       xbrlDoc: {},
       activeTab: 0,
       idRegion: '',
-      year: '',
-      availableYear: [2019, 2018],
+      entityName: '',
+      year: 2021,
+      availableYear: [2014, 2019, 2018],
       tabsItems: [
         { title: 'Overview', component: 'Overview' },
         { title: 'Kinerja Keuangan', component: 'Kinerja' },
@@ -76,6 +78,8 @@ export default {
     const idRegion = this.$route.params.id
     const url = `/reports/xbrl/${year}/${idRegion}.xbrl`
     this.xbrlDoc = await this.loadXBRL(url)
+    this.entityName = xpath.select1('//laporan/umum/namaentitas', this.xbrlDoc).textContent
+    this.year = parseInt(xpath.select1('//laporan/umum/tahun', this.xbrlDoc).textContent)
   },
   methods: {}
 }

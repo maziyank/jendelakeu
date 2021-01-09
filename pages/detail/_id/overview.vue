@@ -6,7 +6,12 @@
 </template>
 
 <script>
+// import xpath from 'xpath'
+
 export default {
-  props: ['doc']
+  props: ['doc'],
+  watch: {
+    doc () {}
+  }
 }
 </script>
