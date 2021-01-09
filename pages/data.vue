@@ -2,23 +2,24 @@
   <section class="section">
     <div class="columns">
       <div class="column is-four-fifths">
-        <h2 class="title is-3 has-text-grey">Laporan Keuangan</h2>
+        <h2 class="title is-3 has-text-grey">
+          Laporan Keuangan
+        </h2>
       </div>
       <div class="column is-one-fifth">
         <b-input
-          rounded
           v-model="filter"
+          rounded
           type="text"
           placeholder="Cari Entitas"
           icon-right="magnify"
-        >
-        </b-input>
+        />
       </div>
     </div>
     <NuxtLink
-      :to="`/detail/${report.id}?tahun=${report.lastyear}`"
-      :key="key"
       v-for="(report, key) of filteredReports"
+      :key="key"
+      :to="`/detail/${report.id}?tahun=${report.lastyear}`"
     >
       <Card
         :title="report.title"
@@ -27,9 +28,9 @@
       />
     </NuxtLink>
     <b-pagination
+      v-model="currentPage"
       style="margin-bottom: 80px"
       :total="reports.length"
-      v-model="currentPage"
       :range-before="3"
       :range-after="3"
       :simple="false"
@@ -41,44 +42,43 @@
       aria-previous-label="Previous page"
       aria-page-label="Page"
       aria-current-label="Current page"
-    >
-    </b-pagination>
+    />
   </section>
 </template>
 
 <script>
-import Card from "./../components/Card";
+import Card from './../components/Card'
 
 export default {
   components: { Card },
-  data() {
+  data () {
     return {
-      filter: "",
+      filter: '',
       reports: [],
       filteredReports: Array(5).fill({ title: null, description: null }),
       currentPage: 1,
       perPage: 5,
-      isLoading: false,
-    };
+      isLoading: false
+    }
   },
   watch: {
-    currentPage: function (val) {
-      this.setPage(val, this.filter);
+    currentPage (val) {
+      this.setPage(val, this.filter)
     },
-    filter: function (val) {
-      this.setPage(this.currentPage, val);
-    },
+    filter (val) {
+      this.setPage(this.currentPage, val)
+    }
   },
-  async mounted() {
+  mounted () {
     setTimeout(async () => {
-      this.reports = await this.getReports();
-      this.setPage(this.currentPage, this.filter);
-    }, 500);
+      this.reports = await this.getReports()
+      this.setPage(this.currentPage, this.filter)
+    }, 500)
   },
   methods: {
-    setPage(page, filter) {
-      filter = filter.toLowerCase().trim();
-      const offset = (page - 1) * this.perPage;
+    setPage (page, filter) {
+      filter = filter.toLowerCase().trim()
+      const offset = (page - 1) * this.perPage
 
       this.filteredReports = this.reports
         .filter((item) => {
@@ -86,17 +86,17 @@ export default {
             item?.title?.toLowerCase().includes(filter) ||
             item?.description?.toLowerCase().includes(filter) ||
             this.isLoading
-          );
+          )
         })
-        .slice(offset, offset + this.perPage);
+        .slice(offset, offset + this.perPage)
     },
-    async getReports() {
-      this.isLoading = true;
-      const resp = await fetch("./reports/index.json");
-      const reports = await resp.json();
-      this.isLoading = false;
-      return reports.data;
-    },
-  },
-};
+    async getReports () {
+      this.isLoading = true
+      const resp = await fetch('./reports/index.json')
+      const reports = await resp.json()
+      this.isLoading = false
+      return reports.data
+    }
+  }
+}
 </script>

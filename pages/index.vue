@@ -3,7 +3,9 @@
     <div class="hero-body">
       <div class="columns">
         <div class="column is-half" style="padding: 2.5rem">
-          <h1 class="title">Selamat Datang</h1>
+          <h1 class="title">
+            Selamat Datang
+          </h1>
           <h2 class="subtitle">
             Informasi Laporan Keuangan Pemerintah melalui Satu Jendela
           </h2>
@@ -13,8 +15,7 @@
               icon-clickable
               size="is-large"
               icon-right="magnify"
-            >
-            </b-input>
+            />
           </b-field>
         </div>
       </div>
@@ -24,8 +25,8 @@
 
 <script>
 export default {
-  name: "HomePage",
-};
+  name: 'HomePage'
+}
 </script>
 
 <style scoped>

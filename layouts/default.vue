@@ -7,14 +7,14 @@
             class="logo"
             src="~/assets/jendelakeu.png"
             alt="Jendela Infomasi Keuangan Pemerintah"
-          />
+          >
         </b-navbar-item>
       </template>
       <template slot="end">
         <b-navbar-item
           v-for="(item, key) of items"
-          exact-active-class="is-active"
           :key="key"
+          exact-active-class="is-active"
           :to="item.to"
           tag="router-link"
         >
@@ -25,42 +25,42 @@
 
     <nuxt />
 
-    <Footer></Footer>
+    <Footer />
   </div>
 </template>
 
 <script>
-import Footer from "./Footer";
+import Footer from './Footer'
 
 export default {
   components: { Footer },
-  data() {
+  data () {
     return {
       items: [
         {
-          title: "Depan",
-          to: { name: "index" },
+          title: 'Depan',
+          to: { name: 'index' }
         },
         {
-          title: "Laporan Keuangan",
-          to: { name: "data" },
+          title: 'Laporan Keuangan',
+          to: { name: 'data' }
         },
         {
-          title: "Berkontribusi",
-          to: { name: "kontribusi" },
+          title: 'Berkontribusi',
+          to: { name: 'kontribusi' }
         },
         {
-          title: "FAQ",
-          to: { name: "faq" },
+          title: 'FAQ',
+          to: { name: 'faq' }
         },
         {
-          title: "Perihal",
-          to: { name: "perihal" },
-        },
-      ],
-    };
-  },
-};
+          title: 'Perihal',
+          to: { name: 'perihal' }
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style scoped>

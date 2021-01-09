@@ -1,7 +1,12 @@
 <template>
-  <div>Overview</div>
+  <div>
+    <p>Overview</p>
+    <p>{{ doc }}</p>
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ['doc']
+}
 </script>
