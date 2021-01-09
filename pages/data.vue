@@ -17,7 +17,7 @@
       </div>
     </div>
     <NuxtLink
-      v-for="(report, key) of filteredReports"
+      v-for="(report, key) of visibleItems"
       :key="key"
       :to="`/detail/${report.id}?tahun=${report.lastyear}`"
     >
@@ -30,7 +30,7 @@
     <b-pagination
       v-model="currentPage"
       style="margin-bottom: 80px"
-      :total="reports.length"
+      :total="filteredReports.length"
       :range-before="3"
       :range-after="3"
       :simple="false"
@@ -53,9 +53,10 @@ export default {
   components: { Card },
   data () {
     return {
-      filter: '',
+      filter: 0,
       reports: [],
-      filteredReports: Array(5).fill({ title: null, description: null }),
+      filteredReports: [],
+      visibleItems: Array(5).fill({ title: null, description: null }),
       currentPage: 1,
       perPage: 5,
       isLoading: false
@@ -63,23 +64,10 @@ export default {
   },
   watch: {
     currentPage (val) {
-      this.setPage(val, this.filter)
+      this.setPage(val)
     },
     filter (val) {
-      this.setPage(this.currentPage, val)
-    }
-  },
-  mounted () {
-    setTimeout(async () => {
-      this.reports = await this.getReports()
-      this.setPage(this.currentPage, this.filter)
-    }, 500)
-  },
-  methods: {
-    setPage (page, filter) {
-      filter = filter.toLowerCase().trim()
-      const offset = (page - 1) * this.perPage
-
+      const filter = val.toLowerCase().trim()
       this.filteredReports = this.reports
         .filter((item) => {
           return (
@@ -88,7 +76,21 @@ export default {
             this.isLoading
           )
         })
-        .slice(offset, offset + this.perPage)
+
+      this.setPage(this.currentPage)
+    }
+  },
+  mounted () {
+    setTimeout(async () => {
+      this.reports = await this.getReports()
+      this.filter = ''
+      this.currentPage = 1
+    }, 500)
+  },
+  methods: {
+    setPage (page) {
+      const offset = (page - 1) * this.perPage
+      this.visibleItems = this.filteredReports.slice(offset, offset + this.perPage)
     },
     async getReports () {
       this.isLoading = true
