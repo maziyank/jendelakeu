@@ -5389,6 +5389,11 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
+fontoxpath@3.9.1:
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/fontoxpath/-/fontoxpath-3.9.1.tgz#fc0361f41c6943a1a94d4e0d6b5b638cd2e36219"
+  integrity sha512-GGlV7PC8WvN9638O4WcW3f6ae/TF2ljz/o0sKOpvv6Ry4U5t9nWkbRiu0sNtlT28BN+leOUtvOQ8m0L6Okb3+Q==
+
 for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -12139,11 +12144,6 @@ xmlchars@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/xmlchars/-/xmlchars-2.2.0.tgz#060fe1bcb7f9c76fe2a17db86a9bc3ab894210cb"
   integrity sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==
-
-xpath@^0.0.32:
-  version "0.0.32"
-  resolved "https://registry.yarnpkg.com/xpath/-/xpath-0.0.32.tgz#1b73d3351af736e17ec078d6da4b8175405c48af"
-  integrity sha512-rxMJhSIoiO8vXcWvSifKqhvV96GjiD5wYb8/QHdoRyQvraTpp4IEv944nhGausZZ3u7dhQXteZuZbaqfpB7uYw==
 
 xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.2"

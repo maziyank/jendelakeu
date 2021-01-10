@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import xpath from 'xpath'
+import { evaluateXPathToString, evaluateXPathToNumber } from 'fontoxpath'
 import Overview from '~/components/detail/overview/index'
 import Rasio from '~/components/detail/rasio/index'
 import Neraca from '~/components/detail/neraca'
@@ -82,8 +82,8 @@ export default {
     const idRegion = this.$route.params.id
     const url = `/reports/xbrl/${year}/${idRegion}.xbrl`
     this.xbrlDoc = await this.loadXBRL(url)
-    this.entityName = xpath.select1('//laporan/umum/namaentitas', this.xbrlDoc).textContent
-    this.year = parseInt(xpath.select1('//laporan/umum/tahun', this.xbrlDoc).textContent)
+    this.entityName = evaluateXPathToString('//laporan/umum/namaentitas', this.xbrlDoc)
+    this.year = evaluateXPathToNumber('//laporan/umum/tahun', this.xbrlDoc)
   },
   methods: {}
 }
