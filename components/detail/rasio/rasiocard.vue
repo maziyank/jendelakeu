@@ -1,7 +1,7 @@
 <template>
   <article class="media">
     <figure class="media-left">
-      <gauge title="Debt to Equity" class="gauge" :value="65" inner-text="90 %" />
+      <gauge title="Debt to Equity" class="gauge" :value="65" inner-text="90 %" :color="color"/>
     </figure>
     <div class="media-content">
       <div class="content">
@@ -31,6 +31,11 @@ export default {
       default: ''
     },
     description: {
+      type: String,
+      required: false,
+      default: ''
+    },
+    color: {
       type: String,
       required: false,
       default: ''

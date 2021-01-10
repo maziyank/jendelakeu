@@ -83,7 +83,7 @@ export default {
   mounted () {
     setTimeout(async () => {
       this.reports = await this.getReports()
-      this.filter = ''
+      this.filter = this.$route.query.search || ''
       this.currentPage = 1
     }, 500)
   },

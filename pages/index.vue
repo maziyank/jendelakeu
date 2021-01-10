@@ -11,10 +11,13 @@
           </h2>
           <b-field>
             <b-input
-              placeholder="Cari Laporan Keuangan di sini"
+              v-model="keyword"
+              placeholder="Cari Entitas Pelaaporan Keuangan di sini"
               icon-clickable
               size="is-large"
               icon-right="magnify"
+              @icon-click="search"
+              @keyup.native.enter="search"
             />
           </b-field>
         </div>
@@ -25,7 +28,18 @@
 
 <script>
 export default {
-  name: 'HomePage'
+  name: 'HomePage',
+  data () {
+    return {
+      keyword: ''
+    }
+  },
+  methods: {
+    search () {
+      console.log(this.keyword)
+      this.$router.push({ path: 'data', query: { search: this.keyword } })
+    }
+  }
 }
 </script>
 

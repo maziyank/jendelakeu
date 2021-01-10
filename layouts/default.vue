@@ -46,8 +46,8 @@ export default {
           to: { name: 'data' }
         },
         {
-          title: 'Berkontribusi',
-          to: { name: 'kontribusi' }
+          title: 'Pusat Pengetahuan',
+          to: { name: 'knowledge' }
         },
         {
           title: 'FAQ',

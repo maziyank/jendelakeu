@@ -39,7 +39,7 @@ import Neraca from '~/components/detail/neraca'
 import Anggaran from '~/components/detail/anggaran'
 import Operasional from '~/components/detail/operasional'
 import Ekuitas from '~/components/detail/ekuitas'
-import Silpa from '~/components/detail/silpa'
+import Sal from '~/components/detail/sal'
 import xbrl from '~/mixins/xbrl'
 
 export default {
@@ -50,7 +50,7 @@ export default {
     Anggaran,
     Operasional,
     Ekuitas,
-    Silpa
+    Sal
   },
   mixins: [xbrl],
   data () {
@@ -69,7 +69,7 @@ export default {
         { title: 'Operasional', component: 'Operasional', icon: 'account-group' },
         { title: 'Arus Kas', component: 'Operasional', icon: 'cash' },
         { title: 'Ekuitas', component: 'Ekuitas', icon: 'bank' },
-        { title: 'SILPA', component: 'Silpa', icon: 'wallet-plus' },
+        { title: 'S A L', component: 'Sal', icon: 'wallet-plus' },
         { title: 'Sumber Data', component: 'source', icon: 'link-box' }
       ]
     }

@@ -1,13 +1,14 @@
 <template>
   <footer class="footer">
-    <div class="content has-text-centered">
-      <p><strong>jendelakeu</strong> by Wahidin Squad 2021</p>
+    <div class="content">
+      <strong>Jendelakeu Project</strong> by Wahidin Squad 2021.
+      <a href="https://www.github.com/maziyank/jendelakeu" style="float:right"> <b-icon icon="github" /></a>
     </div>
   </footer>
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style scoped>

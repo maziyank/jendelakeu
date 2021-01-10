@@ -1,5 +1,5 @@
 <template>
-  <div>SILPA</div>
+  <div>SAL</div>
 </template>
 
 <script>
