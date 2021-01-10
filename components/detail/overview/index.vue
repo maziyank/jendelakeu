@@ -1,0 +1,103 @@
+<template>
+  <div>
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <article class="tile is-child">
+          <cardstat icon="city" description="Total Aset" value="122.232.123.231" />
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child">
+          <cardstat icon="offer" description="Total Pendapatan" value="122.232.123.231" />
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child">
+          <cardstat icon="cart" description="Total Belanja" value="122.232.123.231" />
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child">
+          <cardstat icon="cash-multiple" description="Total Pembiayaan" value="122.232.123.231" />
+        </article>
+      </div>
+    </div>
+
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <article class="tile is-child">
+          <profil />
+        </article>
+      </div>
+      <div class="tile is-vertical is-9">
+        <div class="tile">
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <p class="subtitle">
+                Pendapatan
+              </p>
+              <div class="content">
+                <pendapatan />
+              </div>
+            </article>
+          </div>
+          <div class="tile is-6 is-parent">
+            <article class="tile is-child box">
+              <p class="subtitle">
+                Belanja
+              </p>
+              <div class="content">
+                <belanja />
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="tile ">
+          <div class="tile is-ancestor">
+            <div class="tile is-parent">
+              <article class="tile is-child">
+                <gauge />
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child">
+                <gauge />
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child">
+                <gauge />
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child">
+                <gauge />
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child">
+                <gauge />
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import cardstat from './cardstat'
+import profil from './profil'
+import pendapatan from './pendapatan'
+import belanja from './belanja'
+import gauge from './gauge'
+
+export default {
+  components: { cardstat, profil, pendapatan, belanja, gauge },
+  props: ['doc'],
+  watch: {
+    doc () {}
+  }
+}
+</script>

@@ -15,10 +15,14 @@
     "@nuxt/content": "^1.9.0",
     "@nuxt/typescript-runtime": "^2.0.0",
     "@nuxtjs/pwa": "^3.0.2",
+    "buefy": "^0.9.4",
     "chart.js": "^2.9.4",
     "core-js": "^3.6.5",
+    "fibers": "^5.0.0",
     "nuxt": "^2.14.6",
     "nuxt-buefy": "^0.4.3",
+    "sass": "^1.32.2",
+    "sass-loader": "^10.1.0",
     "vue-ads-table-tree": "^2.4.2",
     "vue-chartjs": "^3.5.1",
     "xpath": "^0.0.32"
@@ -37,6 +41,7 @@
     "eslint-plugin-nuxt": "^1.0.0",
     "jest": "^26.5.0",
     "ts-jest": "^26.4.1",
-    "vue-jest": "^3.0.4"
+    "vue-jest": "^3.0.4",
+    "vue-svg-gauge": "^1.2.1"
   }
 }

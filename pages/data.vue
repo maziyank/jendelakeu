@@ -19,7 +19,7 @@
     <NuxtLink
       v-for="(report, key) of visibleItems"
       :key="key"
-      :to="`/detail/${report.id}?tahun=${report.lastyear}`"
+      :to="`/detail/${report.id}?tahun=${report.years[0]}`"
     >
       <Card
         :title="report.title"
@@ -56,7 +56,7 @@ export default {
       filter: 0,
       reports: [],
       filteredReports: [],
-      visibleItems: Array(5).fill({ title: null, description: null }),
+      visibleItems: Array(5).fill({ title: null, description: null, years: [] }),
       currentPage: 1,
       perPage: 5,
       isLoading: false

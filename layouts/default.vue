@@ -22,9 +22,9 @@
         </b-navbar-item>
       </template>
     </b-navbar>
-
-    <nuxt />
-
+    <div>
+      <nuxt />
+    </div>
     <Footer />
   </div>
 </template>

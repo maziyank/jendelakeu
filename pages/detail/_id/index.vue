@@ -1,42 +1,45 @@
 <template>
   <section class="section" style="padding-top: 50px">
     <div class="columns">
-      <div class="column is-four-fifths">
+      <div class="column is-three-fifths">
         <h2 class="title is-3 has-text-grey">
           {{ entityName }}
         </h2>
       </div>
-      <div class="column is-one-fifth">
-        <b-select v-model="year" placeholder="Pilih Tahun" icon="calendar" rounded style="float: right;">
+      <div class="column is-two-fifth">
+        <b-select v-model="year" rounded placeholder="Pilih Tahun" icon="calendar" style="float:right">
           <option v-for="option in availableYear" :key="option" :value="option">
             {{ option }}
           </option>
         </b-select>
       </div>
     </div>
-
-    <b-tabs v-model="activeTab" type="is-boxed" expanded>
-      <b-tab-item
-        v-for="(tab, index) in tabsItems"
-        :key="index"
-        :label="tab.title"
-      >
-        <component :is="tab.component" :ref="tab.component" :doc.sync="xbrlDoc" />
-      </b-tab-item>
-    </b-tabs>
+    <div class="columns">
+      <div class="column is-full">
+        <b-tabs v-model="activeTab" vertical type="is-boxed" size="medium">
+          <b-tab-item
+            v-for="(tab, index) in tabsItems"
+            :key="index"
+            :icon="tab.icon"
+            :label="tab.title"
+          >
+            <component :is="tab.component" :ref="tab.component" :doc.sync="xbrlDoc" />
+          </b-tab-item>
+        </b-tabs>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
 import xpath from 'xpath'
-import Overview from './overview'
-import Kinerja from './kinerja'
-import Neraca from './neraca'
-import Anggaran from './anggaran'
-import Operasional from './operasional'
-import Ekuitas from './ekuitas'
-import Silpa from './silpa'
-
+import Overview from '~/components/detail/overview/index'
+import Kinerja from '~/components/detail/kinerja'
+import Neraca from '~/components/detail/neraca'
+import Anggaran from '~/components/detail/anggaran'
+import Operasional from '~/components/detail/operasional'
+import Ekuitas from '~/components/detail/ekuitas'
+import Silpa from '~/components/detail/silpa'
 import xbrl from '~/mixins/xbrl'
 
 export default {
@@ -59,14 +62,15 @@ export default {
       year: 2021,
       availableYear: [2014, 2019, 2018],
       tabsItems: [
-        { title: 'Overview', component: 'Overview' },
-        { title: 'Kinerja Keuangan', component: 'Kinerja' },
-        { title: 'Neraca', component: 'Neraca' },
-        { title: 'Realisasi Anggaran', component: 'Anggaran' },
-        { title: 'Operasional', component: 'Operasional' },
-        { title: 'Ekuitas', component: 'Ekuitas' },
-        { title: 'SILPA', component: 'Silpa' },
-        { title: 'Sumber Data', component: 'source' }
+        { title: 'Overview', component: 'Overview', icon: 'eye' },
+        { title: 'Rasio Keuangan', component: 'Kinerja', icon: 'chart-line' },
+        { title: 'Neraca', component: 'Neraca', icon: 'scale-balance' },
+        { title: 'Realisasi Anggaran', component: 'Anggaran', icon: 'beaker-check' },
+        { title: 'Operasional', component: 'Operasional', icon: 'account-group' },
+        { title: 'Arus Kas', component: 'Operasional', icon: 'cash' },
+        { title: 'Ekuitas', component: 'Ekuitas', icon: 'bank' },
+        { title: 'SILPA', component: 'Silpa', icon: 'wallet-plus' },
+        { title: 'Sumber Data', component: 'source', icon: 'link-box' }
       ]
     }
   },
@@ -84,3 +88,15 @@ export default {
   methods: {}
 }
 </script>
+
+<style scoped>
+.b-tabs.is-vertical {
+  flex-wrap: nowrap;
+  padding-bottom: 200px;
+}
+
+.b-tabs .tabs {
+  margin-top: 16px !important;
+}
+
+</style>

@@ -10,19 +10,23 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css' }]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     'assets/style.css',
+    'assets/custom.scss',
     'node_modules/vue-ads-table-tree/dist/vue-ads-table-tree.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
     { src: '~/plugins/vue-ads-table-tree.js', ssr: false },
-    { src: '~/plugins/chart.js', ssr: false }
+    { src: '~/plugins/chart.js', ssr: false },
+    { src: '~/plugins/gauge.js', ssr: false },
+    { src: '~/plugins/buefy.js', ssr: true }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -36,8 +40,6 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    // https://go.nuxtjs.dev/buefy
-    'nuxt-buefy',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content

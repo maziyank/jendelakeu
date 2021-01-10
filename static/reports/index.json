@@ -5,7 +5,7 @@
       "file": "",
       "id": 3302,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png",
-      "lastyear": 2020
+      "years": [2020, 2019, 2018]
     },
     {
       "title": "Kab. Tangerang",
@@ -13,7 +13,7 @@
       "file": 3603,
       "id": 1,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png",
-      "lastyear": 2020
+      "years": [2020, 2019, 2018]
     },
     {
       "title": "Kab.Kudus",
@@ -21,7 +21,7 @@
       "file": "",
       "id": 2,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png",
-      "lastyear": 2020
+      "years": [2020, 2019, 2018]
     },
     {
       "title": "Kab.Rembang",
@@ -29,7 +29,7 @@
       "file": "",
       "id": 3,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png",
-      "lastyear": 2020
+      "years": [2020, 2019, 2018]
     },
     {
       "title": "Kab.Tegal",
@@ -37,7 +37,7 @@
       "file": "",
       "id": 4,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png",
-      "lastyear": 2020
+      "years": [2020, 2019, 2018]
     },
     {
       "title": "Kab.Bogor",
@@ -45,7 +45,7 @@
       "file": "",
       "id": 5,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png",
-      "lastyear": 2020
+      "years": [2020, 2019, 2018]
     }
   ]
 }

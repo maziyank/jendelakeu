@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="buttons end">
+    <div class="buttons level-right">
       <b-button type="is-info" icon-left="file-pdf">
         PDF
       </b-button>
