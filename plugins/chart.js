@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { Line, Bar, HorizontalBar } from 'vue-chartjs'
+import { Line, Bar, HorizontalBar, Radar } from 'vue-chartjs'
 
 const registerComponent = function (name, originalComponent) {
   Vue.component(
@@ -17,3 +17,4 @@ const registerComponent = function (name, originalComponent) {
 registerComponent('ChartBar', Bar)
 registerComponent('ChartLine', Line)
 registerComponent('ChartBarH', HorizontalBar)
+registerComponent('ChartRadar', Radar)

@@ -34,7 +34,7 @@
 <script>
 import xpath from 'xpath'
 import Overview from '~/components/detail/overview/index'
-import Kinerja from '~/components/detail/kinerja'
+import Rasio from '~/components/detail/rasio/index'
 import Neraca from '~/components/detail/neraca'
 import Anggaran from '~/components/detail/anggaran'
 import Operasional from '~/components/detail/operasional'
@@ -45,7 +45,7 @@ import xbrl from '~/mixins/xbrl'
 export default {
   components: {
     Overview,
-    Kinerja,
+    Rasio,
     Neraca,
     Anggaran,
     Operasional,
@@ -63,7 +63,7 @@ export default {
       availableYear: [2014, 2019, 2018],
       tabsItems: [
         { title: 'Overview', component: 'Overview', icon: 'eye' },
-        { title: 'Rasio Keuangan', component: 'Kinerja', icon: 'chart-line' },
+        { title: 'Rasio Keuangan', component: 'Rasio', icon: 'chart-line' },
         { title: 'Neraca', component: 'Neraca', icon: 'scale-balance' },
         { title: 'Realisasi Anggaran', component: 'Anggaran', icon: 'beaker-check' },
         { title: 'Operasional', component: 'Operasional', icon: 'account-group' },

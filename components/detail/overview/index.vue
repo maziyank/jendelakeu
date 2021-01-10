@@ -55,28 +55,35 @@
         <div class="tile ">
           <div class="tile is-ancestor">
             <div class="tile is-parent">
-              <article class="tile is-child">
-                <gauge />
+              <article class="tile is-child box">
+                <p class="title is-6">
+                  Rasio Lancar
+                </p>
+                <gauge title="Rasio Lancar" :value="90" inner-text="90 %" />
               </article>
             </div>
             <div class="tile is-parent">
-              <article class="tile is-child">
-                <gauge />
+              <article class="tile is-child box">
+                <p class="title is-6">
+                  Rasio Lancar
+                </p>
+                <gauge title="Solvabilitas" :value="54" inner-text="90 %" />
               </article>
             </div>
             <div class="tile is-parent">
-              <article class="tile is-child">
-                <gauge />
+              <article class="tile is-child box">
+                <p class="title is-6">
+                  Rasio Lancar
+                </p>
+                <gauge title="Keseimbangan Fiscal" :value="76" inner-text="90 %" />
               </article>
             </div>
             <div class="tile is-parent">
-              <article class="tile is-child">
-                <gauge />
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child">
-                <gauge />
+              <article class="tile is-child box">
+                <p class="title is-6">
+                  Rasio Lancar
+                </p>
+                <gauge title="Debt to Equity" :value="65" inner-text="90 %" />
               </article>
             </div>
           </div>
