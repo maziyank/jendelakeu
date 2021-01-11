@@ -16,13 +16,23 @@
       </div>
       <div class="tile is-vertical is-8">
         <div class="tile">
+          <div v-for="(gauge, key) in gauges" :key="key" class="tile is-parent">
+            <article class="tile is-child box" style="margin:10px">
+              <p class="title is-child is-6">
+                {{ gauge.title }}
+              </p>
+              <gauge :title="gauge.title" :value="gauge.value" />
+            </article>
+          </div>
+        </div>
+        <div class="tile">
           <div class="tile is-parent">
             <article class="tile is-child box">
               <p class="subtitle">
                 Pendapatan
               </p>
               <div class="content">
-                <pendapatan :items="pendapatan" />
+                <chart-1 :items="pendapatan" />
               </div>
             </article>
           </div>
@@ -32,23 +42,13 @@
                 Belanja
               </p>
               <div class="content">
-                <belanja :items="belanja"/>
+                <chart-1 :items="belanja" />
               </div>
             </article>
           </div>
         </div>
-        <div class="tile ">
-          <div v-for="(gauge, key) in gauges" :key="key" class="tile is-ancestor">
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title is-6">
-                  {{ gauge.title }}
-                </p>
-                <gauge :title="gauge.title" :value="gauge.value" />
-              </article>
-            </div>
-          </div>
-        </div>
+
+        <div class="tile" />
       </div>
     </div>
   </div>
@@ -58,13 +58,12 @@
 import { evaluateXPathToString, evaluateXPathToNumber, evaluateXPathToNodes } from 'fontoxpath'
 import cardstat from './cardstat'
 import profil from './profil'
-import pendapatan from './pendapatan'
-import belanja from './belanja'
 import gauge from './gauge'
+import Chart1 from './chart1.vue'
 import xbrl from '~/mixins/xbrl'
 
 export default {
-  components: { cardstat, profil, pendapatan, belanja, gauge },
+  components: { cardstat, profil, Chart1, gauge },
   mixins: [xbrl],
   props: ['doc'],
   data () {
@@ -78,6 +77,11 @@ export default {
   },
   watch: {
     doc: 'refreshData'
+  },
+  mounted () {
+    setTimeout(() => {
+      this.refreshData()
+    }, 500)
   },
   methods: {
     refreshData () {
@@ -112,22 +116,22 @@ export default {
         { title: 'Total Pembiayaan', icon: 'cash-multiple', value: evaluateXPathToNumber('sum(//heading[@name="Pembiayaan"]/subheading/account/number())', this.doc) }
       ]
 
-      this.pendapatan = evaluateXPathToNodes('//heading[@name="Pendapatan"]/subheading', this.doc).map(
+      this.pendapatan = evaluateXPathToNodes('//lra/heading[@name="Pendapatan"]/subheading', this.doc).map(
         (item) => {
           return {
             name: evaluateXPathToString('@name', item),
-            value: evaluateXPathToNumber('sum(account/number())', item),
-            budget: evaluateXPathToNumber('sum(account/@budget/number())', item)
+            value: evaluateXPathToNumber('sum(account/number())', item) / 1000000000,
+            budget: evaluateXPathToNumber('sum(account/@budget/number())', item) / 1000000000
           }
         }
       )
 
-      this.belanja = evaluateXPathToNodes('//heading[@name="Belanja"]/subheading', this.doc).map(
+      this.belanja = evaluateXPathToNodes('//lra/heading[@name="Belanja"]/subheading', this.doc).map(
         (item) => {
           return {
             name: evaluateXPathToString('@name', item),
-            value: -1 * evaluateXPathToNumber('sum(account/number())', item),
-            budget: -1 * evaluateXPathToNumber('sum(account/@budget/number())', item)
+            value: -1 * evaluateXPathToNumber('sum(account/number())', item) / 1000000000,
+            budget: -1 * evaluateXPathToNumber('sum(account/@budget/number())', item) / 1000000000
           }
         }
       )

@@ -47,7 +47,7 @@ export default {
 <style scoped>
 .inner-text {
     width: 100%;
-    height: 100%;
+    height: 200px;
     display: flex;
     justify-content: center;
     margin-top: 60px;

@@ -1,14 +1,10 @@
-<template>
-  <div>
-    <client-only>
-      <chart-bar :data="lineData" :options="options" />
-    </client-only>
-  </div>
-</template>
 
 <script>
+import { Bar } from 'vue-chartjs'
+
 export default {
   props: ['items'],
+  extends: Bar,
   data () {
     return {
       lineData: {
@@ -71,6 +67,7 @@ export default {
       this.lineData.labels = this.items.map(x => x.name)
       this.lineData.datasets[0].data = this.items.map(x => x.value)
       this.lineData.datasets[1].data = this.items.map(x => x.budget)
+      this.renderChart(this.lineData, this.options)
     }
   }
 }
