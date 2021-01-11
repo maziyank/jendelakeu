@@ -26,7 +26,7 @@
     <div class="tile is-ancestor">
       <div class="tile is-parent">
         <article class="tile is-child">
-          <profil />
+          <profil :items="profilData" />
         </article>
       </div>
       <div class="tile is-vertical is-9">
@@ -94,6 +94,7 @@
 </template>
 
 <script>
+import { evaluateXPathToString } from 'fontoxpath'
 import cardstat from './cardstat'
 import profil from './profil'
 import pendapatan from './pendapatan'
@@ -103,8 +104,33 @@ import gauge from './gauge'
 export default {
   components: { cardstat, profil, pendapatan, belanja, gauge },
   props: ['doc'],
+  data () {
+    return {
+      profilData: []
+    }
+  },
   watch: {
-    doc () {}
+    doc: 'refreshData'
+  },
+  methods: {
+    refreshData () {
+      this.profilData = [
+        { meta: 'Nama Entitas', icon: 'home-city' },
+        { meta: 'Nama Kepala Daerah', icon: 'account-supervisor-circle' },
+        { meta: 'Opini', icon: 'help-circle' },
+        { meta: 'Luas Wilayah', icon: 'map' },
+        { meta: 'Jumlah Penduduk', icon: 'account-group' },
+        { meta: 'PDRB (Harga Berlaku)', icon: 'finance' },
+        { meta: 'PDRB/Kapita', icon: 'finance' },
+        { meta: 'Inflasi', icon: 'cart-arrow-down' }
+      ].map((x) => {
+        return {
+          meta: x.meta,
+          icon: x.icon,
+          value: evaluateXPathToString(`//general/info[@name='${x.meta}']`, this.doc)
+        }
+      })
+    }
   }
 }
 </script>

@@ -6,16 +6,12 @@
 		<info name="Kode Daearah">3100</info>
 		<info name="Nama Kepala Daerah">Anies Baswedan</info>
 		<info name="Luas Wilayah">7660</info>
-		<info name="Jumlah Penduduk">Anies Baswedan</info>
-		<info name="PDRB atas Harga Berlaku">2840.33</info>
-		<info name="PDRB atas Harga Konstan">1838.50</info>
-		<info name="PDRB per Kapita atas Harga Berlaku">269.07</info>
-		<info name="Pendapatan per Kapita">Anies Baswedan</info>
-		<info name="Indeks Pembangunan Manusia">Anies Baswedan</info>
-		<info name="Indeks Kapasistas Fiskal">Anies Baswedan</info>
+		<info name="Jumlah Penduduk">10.000.000</info>
+		<info name="PDRB (Harga Berlaku)">2840.33</info>
+		<info name="PDRB (Harga Konstan)">1838.50</info>
+		<info name="PDRB/Kapita">269.07</info>
+		<info name="Opini">WTP</info>
 		<info name="Inflasi">3.23</info>
-		<info name="Sektor Unggulan">Kendaraan dan bagiannya, Perhiasan atau permata, Ikan dan udang</info>
-		<info name="Sumber Data">39.1</info>
 	</general>
 
 	<lra>
