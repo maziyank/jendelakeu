@@ -174,7 +174,7 @@
 		</heading>
 	</lra>
 	<sal>
-		<heading code="-" name="saldo Anggaran Lebih Awal">
+		<heading code="-" name="Saldo Anggaran Lebih Awal">
 			<subheading code="-" name="Saldo Anggaran Lebih Awal">
 				<account code="-" name="Saldo Anggaran Lebih Awal" prevValue="13165982127533">
 					9755082722776
