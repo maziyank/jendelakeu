@@ -76,54 +76,54 @@
 		</heading>
 		<heading code="50000000" name="Belanja">
 			<subheading code="51000000" name="Belanja Operasi">
-				<account code="51010000" name="Belanja Pegawai" prevValue="-21852416650509" budget="23276718199848">
+				<account code="51010000" name="Belanja Pegawai" prevValue="-21852416650509" budget="-23276718199848">
 					-22016852174914
 				</account>
-				<account code="51020000" name="Belanja Barang" prevValue="-16919780405273" budget="23976819799778">
+				<account code="51020000" name="Belanja Barang" prevValue="-16919780405273" budget="-23976819799778">
 					-20807658518255
 				</account>
-				<account code="51030000" name="Belanja Bunga" prevValue="-44048569889" budget="76000000000">
+				<account code="51030000" name="Belanja Bunga" prevValue="-44048569889" budget="-76000000000">
 					-60785495306
 				</account>
-				<account code="51040000" name="Belanja Subsidi" prevValue="-2640949492360" budget="4797631637216">
+				<account code="51040000" name="Belanja Subsidi" prevValue="-2640949492360" budget="-4797631637216">
 					-2782933713289
 				</account>
-				<account code="51050000" name="Belanja Hibah" prevValue="-1422151030238" budget="2753054702361">
+				<account code="51050000" name="Belanja Hibah" prevValue="-1422151030238" budget="-2753054702361">
 					-2475188905410
 				</account>
-				<account code="51060000" name="Belanja Bantuan Sosial" prevValue="-4063970052586" budget="4466438312000">
+				<account code="51060000" name="Belanja Bantuan Sosial" prevValue="-4063970052586" budget="-4466438312000">
 					-4402326917199
 				</account>
 			</subheading>
 			<subheading code="52000000" name="Belanja Modal">
-				<account code="52010000" name="Belanja Tanah" prevValue="-5493373929929" budget="5362043076662">
+				<account code="52010000" name="Belanja Tanah" prevValue="-5493373929929" budget="-5362043076662">
 					-2338517736816
 				</account>
-				<account code="52020000" name="Belanja Peralatan dan Mesin" prevValue="-2503550334498" budget="3313924706101">
+				<account code="52020000" name="Belanja Peralatan dan Mesin" prevValue="-2503550334498" budget="-3313924706101">
 					-2820376301889
 				</account>
-				<account code="52030000" name="Belanja Gedung dan Bangunan" prevValue="-3787773213370" budget="5271058319964">
+				<account code="52030000" name="Belanja Gedung dan Bangunan" prevValue="-3787773213370" budget="-5271058319964">
 					-3811316212589
 				</account>
-				<account code="52040000" name="Belanja Jalan, Irigasi, dan Jaringan" prevValue="-2195927869729" budget="3254146768454">
+				<account code="52040000" name="Belanja Jalan, Irigasi, dan Jaringan" prevValue="-2195927869729" budget="-3254146768454">
 					-2426554322512
 				</account>
-				<account code="52050000" name="Belanja Aset Tetap Lainnya" prevValue="-137982740117" budget="193210270968">
+				<account code="52050000" name="Belanja Aset Tetap Lainnya" prevValue="-137982740117" budget="-193210270968">
 					-155163205784
 				</account>
 			</subheading>
 			<subheading code="53000000" name="Belanja Tidak Terduga">
-				<account code="53010000" name="Belanja Tidak Terduga" prevValue="-1924529559" budget="269318083509">
+				<account code="53010000" name="Belanja Tidak Terduga" prevValue="-1924529559" budget="-269318083509">
 					-1613965050
 				</account>
 			</subheading>
 		</heading>
 		<heading code="54000000" name="Belanja Transfer">
 			<subheading code="54020000" name="Belanja Bantuan Keuangan">
-				<account code="54020100" name="Bantuan Keuangan ke Pemerintah Daerah Lainnya" prevValue="-340952047100" budget="835790862500">
+				<account code="54020100" name="Bantuan Keuangan ke Pemerintah Daerah Lainnya" prevValue="-340952047100" budget="-835790862500">
 					-827620588200
 				</account>
-				<account code="" name="Bantuan Keuangan Lainnya" prevValue="-5320986000" budget="11455624800">
+				<account code="" name="Bantuan Keuangan Lainnya" prevValue="-5320986000" budget="-11455624800">
 					-11455624800
 				</account>
 			</subheading>

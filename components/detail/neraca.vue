@@ -25,7 +25,7 @@ export default {
         dataTree: true,
         dataTreeStartExpanded: [true, true, false],
         columns: [
-          { title: 'Akun', width: 400, field: 'account', headerHozAlign: 'left', hozAlign: 'left', headerTooltip: true }, // never hide this column
+          { title: 'Akun', headerSort: false, width: 400, field: 'account', headerHozAlign: 'left', hozAlign: 'left', headerTooltip: true }, // never hide this column
           { title: 'Jumlah Tahun Lalu (Rp)', width: 300, field: 'previous', formatter: 'money', formatterParams: this.RpFormatter, headerHozAlign: 'right', hozAlign: 'right', headerTooltip: true },
           { title: 'Perubahan (%)', width: 200, field: 'change', headerHozAlign: 'center', hozAlign: 'center', headerTooltip: true },
           { title: 'Jumlah Tahun Ini (Rp)', width: 300, field: 'current', headerHozAlign: 'right', hozAlign: 'right', formatter: 'money', formatterParams: this.RpFormatter, headerTooltip: true } // hide this column first
