@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  props: ['ratios'],
   data () {
     return {
       chartData: {
@@ -30,6 +31,16 @@ export default {
           text: 'Rasio Laporan Keuangan'
         }
       }
+    }
+  },
+  watch: {
+    ratios: 'refreshData'
+  },
+  methods: {
+    refreshData () {
+      this.chartData.labels = this.ratios.map(x => x.title)
+      this.chartData.datasets[0].data = this.ratios.map(x => x.value)
+      console.log(this.chartData)
     }
   }
 }

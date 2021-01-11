@@ -5,12 +5,12 @@
         :value="value"
         :separator-step="0"
         :min="0"
-        :max="100"
+        :max="1"
         :gauge-color="color"
         :scale-interval="1"
       >
         <div class="inner-text">
-          {{ innerText }}
+          {{ value.toFixed(2) * 100 }} %
         </div>
       </vue-gauge>
     </client-only>

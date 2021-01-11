@@ -69,8 +69,7 @@ export default {
         { title: 'Operasional', component: 'Operasional', icon: 'account-group' },
         { title: 'Arus Kas', component: 'Operasional', icon: 'cash' },
         { title: 'Ekuitas', component: 'Ekuitas', icon: 'bank' },
-        { title: 'S A L', component: 'Sal', icon: 'wallet-plus' },
-        { title: 'Sumber Data', component: 'source', icon: 'link-box' }
+        { title: 'S A L', component: 'Sal', icon: 'wallet-plus' }
       ]
     }
   },

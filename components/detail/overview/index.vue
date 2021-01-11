@@ -1,24 +1,9 @@
 <template>
   <div>
     <div class="tile is-ancestor">
-      <div class="tile is-parent">
+      <div v-for="(card, key) in topCards" :key="key" class="tile is-parent">
         <article class="tile is-child">
-          <cardstat icon="city" description="Total Aset" value="122.232.123.231" />
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child">
-          <cardstat icon="offer" description="Total Pendapatan" value="122.232.123.231" />
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child">
-          <cardstat icon="cart" description="Total Belanja" value="122.232.123.231" />
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child">
-          <cardstat icon="cash-multiple" description="Total Pembiayaan" value="122.232.123.231" />
+          <cardstat :icon="card.icon" :description="card.title" :value="card.value" />
         </article>
       </div>
     </div>
@@ -29,7 +14,7 @@
           <profil :items="profilData" />
         </article>
       </div>
-      <div class="tile is-vertical is-9">
+      <div class="tile is-vertical is-8">
         <div class="tile">
           <div class="tile is-parent">
             <article class="tile is-child box">
@@ -53,37 +38,13 @@
           </div>
         </div>
         <div class="tile ">
-          <div class="tile is-ancestor">
+          <div v-for="(gauge, key) in gauges" :key="key" class="tile is-ancestor">
             <div class="tile is-parent">
               <article class="tile is-child box">
                 <p class="title is-6">
-                  Rasio Lancar
+                  {{ gauge.title }}
                 </p>
-                <gauge title="Rasio Lancar" :value="90" inner-text="90 %" />
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title is-6">
-                  Rasio Lancar
-                </p>
-                <gauge title="Solvabilitas" :value="54" inner-text="90 %" />
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title is-6">
-                  Rasio Lancar
-                </p>
-                <gauge title="Keseimbangan Fiscal" :value="76" inner-text="90 %" />
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title is-6">
-                  Rasio Lancar
-                </p>
-                <gauge title="Debt to Equity" :value="65" inner-text="90 %" />
+                <gauge :title="gauge.title" :value="gauge.value" />
               </article>
             </div>
           </div>
@@ -94,19 +55,23 @@
 </template>
 
 <script>
-import { evaluateXPathToString } from 'fontoxpath'
+import { evaluateXPathToString, evaluateXPathToNumber } from 'fontoxpath'
 import cardstat from './cardstat'
 import profil from './profil'
 import pendapatan from './pendapatan'
 import belanja from './belanja'
 import gauge from './gauge'
+import xbrl from '~/mixins/xbrl'
 
 export default {
   components: { cardstat, profil, pendapatan, belanja, gauge },
+  mixins: [xbrl],
   props: ['doc'],
   data () {
     return {
-      profilData: []
+      profilData: [],
+      gauges: [],
+      topCards: []
     }
   },
   watch: {
@@ -130,6 +95,20 @@ export default {
           value: evaluateXPathToString(`//general/info[@name='${x.meta}']`, this.doc)
         }
       })
+
+      this.gauges = [
+        { title: 'Rasio Efektivitas', value: this.RasioEfektivitas(this.doc) },
+        { title: 'Rasio Belanja Modal', value: this.RasioBelanjaModal(this.doc) },
+        { title: 'Rasio Kemandirian', value: this.RasioKemandirian(this.doc) },
+        { title: 'Rasio Lancar', value: this.quickRatio(this.doc) }
+      ]
+
+      this.topCards = [
+        { title: 'Total Aset', icon: 'city', value: evaluateXPathToNumber('sum(//group[@name="Aset"]/heading/subheading/account/number())', this.doc) },
+        { title: 'Total Pendapatan', icon: 'offer', value: evaluateXPathToNumber('sum(//heading[@name="Pendapatan"]/subheading/account/number())', this.doc) },
+        { title: 'Total Belanja', icon: 'cart', value: -1 * evaluateXPathToNumber('sum(//heading[@name="Belanja"]/subheading/account/number())', this.doc) },
+        { title: 'Total Pembiayaan', icon: 'cash-multiple', value: evaluateXPathToNumber('sum(//heading[@name="Pembiayaan"]/subheading/account/number())', this.doc) }
+      ]
     }
   }
 }

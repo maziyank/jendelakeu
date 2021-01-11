@@ -3,7 +3,7 @@
     <div class="tile is-ancestor">
       <div class="tile is-parent">
         <article class="tile is-child">
-          <ratioradar />
+          <ratioradar :ratios="ratios" />
         </article>
       </div>
       <div class="tile is-vertical is-8">
@@ -24,46 +24,42 @@
 <script>
 import rasiocard from './rasiocard'
 import ratioradar from './ratioradar'
+import xbrl from '~/mixins/xbrl'
 
 export default {
   components: { rasiocard, ratioradar },
+  mixins: [xbrl],
+  props: ['doc'],
   data () {
     return {
-      ratios: [
+      ratios: []
+    }
+  },
+  watch: {
+    doc: 'refreshData'
+  },
+  methods: {
+    refreshData () {
+      this.ratios = [
         {
           title: 'Rasio Lancar',
-          description: 'Lorem Upsom',
-          value: 90
+          description: 'Rasio ini menunjukan kemampuan pemerintah untuk memenuhi kewajiban hutang jangka pendek untuk jangka waktu 12 bulan ke depan',
+          value: this.quickRatio(this.doc)
         },
         {
-          title: 'Rasio Lancar',
-          description: 'Lorem Upsom',
-          value: 90
+          title: 'Rasio Belanja Modal',
+          description: 'Rasio ini menunjukan proporsi belanja yang dikeluarkan untuk pembangunan/pembelian aset dibandingkan dengan keseluruhan belanja',
+          value: this.RasioBelanjaModal(this.doc)
         },
         {
-          title: 'Rasio Lancar',
-          description: 'Lorem Upsom',
-          value: 90
+          title: 'Rasio Kemandirian',
+          description: 'Kemandirian keuangan daerah (otonomi fiskal) mengindikasikan kemampuan Pemerintah Daerah dalam membiayai sendiri kegiatan pemerintahan, pembangunan, dan pelayanan masyarakat yang telah membayar pajak dan retribusi sebagai sumber pendapatan daerah ',
+          value: this.RasioKemandirian(this.doc)
         },
         {
-          title: 'Rasio Lancar',
-          description: 'Lorem Upsom',
-          value: 90
-        },
-        {
-          title: 'Rasio Lancar',
-          description: 'Lorem Upsom',
-          value: 90
-        },
-        {
-          title: 'Rasio Lancar',
-          description: 'Lorem Upsom',
-          value: 90
-        },
-        {
-          title: 'Rasio Lancar',
-          description: 'Lorem Upsom',
-          value: 90
+          title: 'Rasio Efektivitas',
+          description: 'Rasio efektivitas menggambarkan kemampuan pemerintah daerah dalam merealisasikan pendapatan asli daerah yang direncanakan dibandingkan dengan target yang ditetapkan berdasarkan potensi riil daerah',
+          value: this.RasioEfektivitas(this.doc)
         }
       ]
     }

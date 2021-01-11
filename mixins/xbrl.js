@@ -1,4 +1,4 @@
-// import { evaluateXPathToNodes, evaluateXPathToString, evaluateXPathToNumber } from 'fontoxpath'
+import { evaluateXPathToNumber } from 'fontoxpath'
 
 export default {
   methods: {
@@ -18,6 +18,24 @@ export default {
         11000: 'Kas dan Setara Kas'
       }
       return codification[code]
+    },
+
+    quickRatio (doc) {
+      return evaluateXPathToNumber('sum(//heading[@name="Aset Lancar"]/subheading/account/number())', doc) /
+        evaluateXPathToNumber('sum(//heading/subheading[@name="Kewajiban Jangka Pendek"]/account/number())', doc)
+    },
+    RasioBelanjaModal (doc) {
+      return evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Belanja Modal"]/account/number())', doc) /
+        evaluateXPathToNumber('sum(//lra/heading[@name="Belanja"]/subheading/account/number())', doc)
+    },
+    RasioKemandirian (doc) {
+      return evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/number())', doc) /
+        evaluateXPathToNumber('sum(//lra/heading[@name="Pendapatan"]/subheading/account/number())', doc)
+    },
+    RasioEfektivitas (doc) {
+      return evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/number())', doc) /
+        evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/@budget/number())', doc)
     }
+
   }
 }
