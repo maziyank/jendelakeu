@@ -10,6 +10,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],
+    script: [{ src: 'https://unpkg.com/currency.js/dist/currency.min.js' }],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css' }]
   },
@@ -18,12 +19,12 @@ export default {
   css: [
     'assets/style.css',
     'assets/custom.scss',
-    'node_modules/vue-ads-table-tree/dist/vue-ads-table-tree.css'
+    'node_modules/vue-tabulator/dist/scss/tabulator_modern.scss'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    { src: '~/plugins/vue-ads-table-tree.js', ssr: false },
+    { src: '~/plugins/tabulator.js', ssr: false },
     { src: '~/plugins/chart.js', ssr: false },
     { src: '~/plugins/gauge.js', ssr: false },
     { src: '~/plugins/buefy.js', ssr: true }

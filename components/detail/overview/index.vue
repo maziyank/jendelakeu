@@ -121,7 +121,7 @@ export default {
         { meta: 'Luas Wilayah', icon: 'map' },
         { meta: 'Jumlah Penduduk', icon: 'account-group' },
         { meta: 'PDRB (Harga Berlaku)', icon: 'finance' },
-        { meta: 'PDRB/Kapita', icon: 'finance' },
+        { meta: 'Pendapatan/Kapita', icon: 'finance' },
         { meta: 'Inflasi', icon: 'cart-arrow-down' }
       ].map((x) => {
         return {
