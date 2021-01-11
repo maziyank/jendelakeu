@@ -91,7 +91,7 @@ export default {
       setTimeout(() => {
         const entities = this.$store.getters.getEntities
         this.availableYear = entities.find(item => item.id === parseInt(idRegion)).years
-        this.year = evaluateXPathToString("//general/info[@name='Tahun Anggaran']", this.xbrlDoc)
+        this.year = evaluateXPathToString("//general/info[@name='Tahun Anggaran']/text()", this.xbrlDoc)
       }, 500)
     }
   }

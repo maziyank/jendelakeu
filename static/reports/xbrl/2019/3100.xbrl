@@ -4,9 +4,7 @@
 		<info name="Nama Entitas">
 			DKI Jakarta
 		</info>
-		<info name="Tahun Anggaran">
-			2019
-		</info>
+		<info name="Tahun Anggaran">2019</info>
 		<info name="Kode Daearah">
 			3100
 		</info>
@@ -175,8 +173,8 @@
 			</subheading>
 		</heading>
 	</lra>
-	<SAL>
-		<heading code="-" name="Saldo Anggaran Lebih Awal">
+	<sal>
+		<heading code="-" name="saldo Anggaran Lebih Awal">
 			<subheading code="-" name="Saldo Anggaran Lebih Awal">
 				<account code="-" name="Saldo Anggaran Lebih Awal" prevValue="13165982127533">
 					9755082722776
@@ -225,8 +223,8 @@
 				</account>
 			</subheading>
 		</heading>
-	</SAL>
-	<Laporan_Operasional>
+	</sal>
+	<lo>
 		<heading code="70000000" name="Pendapatan">
 			<subheading code="71000000" name="Pendapatan Asli Daerah">
 				<account code="71010000" name="Pendapatan Pajak Daerah" prevValue="37869523288157">
@@ -334,8 +332,8 @@
 				</account>
 			</subheading>
 		</heading>
-	</Laporan_Operasional>
-	<Laporan_Perubahan_Ekuitas>
+	</lo>
+	<lpe>
 		<heading code="-" name="Ekuitas Awal">
 			<subheading code="-" name="Ekuitas Awal">
 				<account code="-" name="Ekuitas Awal" prevValue="461922919162697">
@@ -398,7 +396,7 @@
 				</account>
 			</subheading>
 		</heading>
-	</Laporan_Perubahan_Ekuitas>
+	</lpe>
 	<neraca>
 		<group code="10000000" name="Aset">
 			<heading code="10000000" name="Aset Lancar">
