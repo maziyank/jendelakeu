@@ -22,7 +22,7 @@
                 Pendapatan
               </p>
               <div class="content">
-                <pendapatan />
+                <pendapatan :items="pendapatan" />
               </div>
             </article>
           </div>
@@ -32,7 +32,7 @@
                 Belanja
               </p>
               <div class="content">
-                <belanja />
+                <belanja :items="belanja"/>
               </div>
             </article>
           </div>
@@ -55,7 +55,7 @@
 </template>
 
 <script>
-import { evaluateXPathToString, evaluateXPathToNumber } from 'fontoxpath'
+import { evaluateXPathToString, evaluateXPathToNumber, evaluateXPathToNodes } from 'fontoxpath'
 import cardstat from './cardstat'
 import profil from './profil'
 import pendapatan from './pendapatan'
@@ -71,7 +71,9 @@ export default {
     return {
       profilData: [],
       gauges: [],
-      topCards: []
+      topCards: [],
+      pendapatan: [],
+      belanja: []
     }
   },
   watch: {
@@ -109,6 +111,26 @@ export default {
         { title: 'Total Belanja', icon: 'cart', value: -1 * evaluateXPathToNumber('sum(//heading[@name="Belanja"]/subheading/account/number())', this.doc) },
         { title: 'Total Pembiayaan', icon: 'cash-multiple', value: evaluateXPathToNumber('sum(//heading[@name="Pembiayaan"]/subheading/account/number())', this.doc) }
       ]
+
+      this.pendapatan = evaluateXPathToNodes('//heading[@name="Pendapatan"]/subheading', this.doc).map(
+        (item) => {
+          return {
+            name: evaluateXPathToString('@name', item),
+            value: evaluateXPathToNumber('sum(account/number())', item),
+            budget: evaluateXPathToNumber('sum(account/@budget/number())', item)
+          }
+        }
+      )
+
+      this.belanja = evaluateXPathToNodes('//heading[@name="Belanja"]/subheading', this.doc).map(
+        (item) => {
+          return {
+            name: evaluateXPathToString('@name', item),
+            value: -1 * evaluateXPathToNumber('sum(account/number())', item),
+            budget: -1 * evaluateXPathToNumber('sum(account/@budget/number())', item)
+          }
+        }
+      )
     }
   }
 }

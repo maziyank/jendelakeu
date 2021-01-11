@@ -40,7 +40,6 @@ export default {
     refreshData () {
       this.chartData.labels = this.ratios.map(x => x.title)
       this.chartData.datasets[0].data = this.ratios.map(x => x.value)
-      console.log(this.chartData)
     }
   }
 }

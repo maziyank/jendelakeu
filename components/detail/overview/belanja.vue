@@ -8,24 +8,25 @@
 
 <script>
 export default {
+  props: ['items'],
   data () {
     return {
       lineData: {
-        labels: ['Pajak', 'Retribusi', 'Kekayaan Dipisahkan', 'Lain-Lain'],
+        labels: [],
         datasets: [
           {
-            label: 'Actual',
+            label: 'Realisasi',
             backgroundColor: 'rgba(0, 0, 255, 0.5)',
             borderWidth: 1,
-            data: [40, 150, 50, 60],
+            data: [],
             xAxisID: 'bar-x-axis1',
             stack: 'background'
           },
           {
-            label: 'Target',
+            label: 'Anggaran',
             backgroundColor: 'rgba(0, 0, 0, 0.2)',
             borderWidth: 1,
-            data: [100, 100, 100, 100],
+            data: [],
             xAxisID: 'bar-x-axis2'
           }
         ]
@@ -41,7 +42,7 @@ export default {
             display: false,
             stacked: true,
             id: 'bar-x-axis2',
-            barThickness: 70,
+            barThickness: 50,
             // these are needed because the bar controller defaults set only the first x axis properties
             type: 'category',
             categoryPercentage: 0.8,
@@ -54,12 +55,22 @@ export default {
           yAxes: [{
             stacked: false,
             ticks: {
-              beginAtZero: true
+              beginAtZero: false
             }
           }]
 
         }
       }
+    }
+  },
+  watch: {
+    items: 'refreshData'
+  },
+  methods: {
+    refreshData () {
+      this.lineData.labels = this.items.map(x => x.name)
+      this.lineData.datasets[0].data = this.items.map(x => x.value)
+      this.lineData.datasets[1].data = this.items.map(x => x.budget)
     }
   }
 }
