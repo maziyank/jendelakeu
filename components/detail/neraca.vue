@@ -50,7 +50,7 @@ export default {
           account: evaluateXPathToString('@name', group),
           current: current0,
           previous: previous0,
-          change: previous0 > 0 ? ((current0 - previous0) / previous0 * 100).toFixed(2) : 1,
+          change: previous0 !== 0 ? ((current0 - previous0) / previous0 * 100).toFixed(2) : 1,
           _children: headings.map((heading) => {
             const current = evaluateXPathToNumber('sum(subheading/account/number())', heading)
             const previous = evaluateXPathToNumber('sum(subheading/account/@prevValue/number())', heading)
@@ -59,7 +59,7 @@ export default {
               account: evaluateXPathToString('@name', heading),
               current,
               previous,
-              change: previous > 0 ? ((current - previous) / previous * 100).toFixed(2) : 1,
+              change: previous !== 0 ? ((current - previous) / previous * 100).toFixed(2) : 1,
               _children: subheadings.map((subheading) => {
                 const current2 = evaluateXPathToNumber('sum(account/number())', subheading)
                 const previous2 = evaluateXPathToNumber('sum(account/@prevValue/number())', subheading)
@@ -68,7 +68,7 @@ export default {
                   account: evaluateXPathToString('@name', subheading),
                   current: current2,
                   previous: previous2,
-                  change: previous2 > 0 ? ((current2 - previous2) / previous2 * 100).toFixed(2) : 1,
+                  change: previous2 !== 0 ? ((current2 - previous2) / previous2 * 100).toFixed(2) : 1,
                   _children: accounts.map((account) => {
                     const current3 = evaluateXPathToNumber('sum(number())', account)
                     const previous3 = evaluateXPathToNumber('sum(@prevValue/number())', account)
@@ -76,7 +76,7 @@ export default {
                       account: evaluateXPathToString('@name', account),
                       current: current3,
                       previous: previous3,
-                      change: previous3 > 0 ? ((current3 - previous3) / previous3 * 100).toFixed(2) : 1
+                      change: previous3 !== 0 ? ((current3 - previous3) / previous3 * 100).toFixed(2) : 1
                     }
                   })
                 }
