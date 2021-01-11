@@ -48,9 +48,11 @@
 
 <script>
 import Card from './../components/Card'
+import xbrl from '~/mixins/xbrl'
 
 export default {
   components: { Card },
+  mixins: [xbrl],
   data () {
     return {
       filter: 0,
@@ -58,8 +60,7 @@ export default {
       filteredReports: [],
       visibleItems: Array(5).fill({ title: null, description: null, years: [] }),
       currentPage: 1,
-      perPage: 5,
-      isLoading: false
+      perPage: 5
     }
   },
   watch: {
@@ -81,23 +82,16 @@ export default {
     }
   },
   mounted () {
-    setTimeout(async () => {
-      this.reports = await this.getReports()
+    setTimeout(() => {
+      this.reports = this.$store.getters.getEntities
       this.filter = this.$route.query.search || ''
       this.currentPage = 1
-    }, 500)
+    }, 300)
   },
   methods: {
     setPage (page) {
       const offset = (page - 1) * this.perPage
       this.visibleItems = this.filteredReports.slice(offset, offset + this.perPage)
-    },
-    async getReports () {
-      this.isLoading = true
-      const resp = await fetch('./reports/index.json')
-      const reports = await resp.json()
-      this.isLoading = false
-      return reports.data
     }
   }
 }

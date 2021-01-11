@@ -31,9 +31,11 @@
 
 <script>
 import Footer from './Footer'
+import xbrl from '~/mixins/xbrl'
 
 export default {
   components: { Footer },
+  mixins: [xbrl],
   data () {
     return {
       items: [
@@ -58,6 +60,12 @@ export default {
           to: { name: 'perihal' }
         }
       ]
+    }
+  },
+  async mounted () {
+    if (!this.$store.state.entities) {
+      const entities = await this.getReports()
+      this.$store.commit('setEntities', entities)
     }
   }
 }

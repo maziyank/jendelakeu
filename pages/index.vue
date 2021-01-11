@@ -3,7 +3,9 @@
     <div class="hero-body">
       <div class="columns">
         <div class="column is-half" style="padding: 2.5rem">
-          <h1 class="title">Selamat Datang</h1>
+          <h1 class="title">
+            Selamat Datang
+          </h1>
           <h2 class="subtitle">
             Informasi Laporan Keuangan Pemerintah melalui Satu Jendela
           </h2>
@@ -26,18 +28,18 @@
 
 <script>
 export default {
-  name: "HomePage",
-  data() {
+  name: 'HomePage',
+  data () {
     return {
-      keyword: "",
-    };
+      keyword: ''
+    }
   },
   methods: {
-    search() {
-      this.$router.push({ path: "data", query: { search: this.keyword } });
-    },
-  },
-};
+    search () {
+      this.$router.push({ path: 'data', query: { search: this.keyword } })
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -50,6 +52,6 @@ export default {
       rgb(140 103 239 / 0.9) 71%,
       rgb(176 123 245 / 0.9) 100%
     ),
-    url(/_nuxt/assets/background.png) !important;
+    url('~assets/background.png') !important;
 }
 </style>

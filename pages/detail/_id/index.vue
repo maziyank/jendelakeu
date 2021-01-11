@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import { evaluateXPathToString, evaluateXPathToNumber } from 'fontoxpath'
+import { evaluateXPathToString } from 'fontoxpath'
 import Overview from '~/components/detail/overview/index'
 import Rasio from '~/components/detail/rasio/index'
 import Neraca from '~/components/detail/neraca'
@@ -60,7 +60,7 @@ export default {
       idRegion: '',
       entityName: '',
       year: 2021,
-      availableYear: [2014, 2019, 2018],
+      availableYear: [],
       tabsItems: [
         { title: 'Overview', component: 'Overview', icon: 'eye' },
         { title: 'Rasio Keuangan', component: 'Rasio', icon: 'chart-line' },
@@ -75,17 +75,26 @@ export default {
     }
   },
   watch: {
-    $route: 'loadXBRL'
+    $route: 'loadData'
   },
-  async mounted () {
-    const year = this.$route.query.tahun
-    const idRegion = this.$route.params.id
-    const url = `/reports/xbrl/${year}/${idRegion}.xbrl`
-    this.xbrlDoc = await this.loadXBRL(url)
-    this.entityName = evaluateXPathToString('//laporan/umum/namaentitas', this.xbrlDoc)
-    this.year = evaluateXPathToNumber('//laporan/umum/tahun', this.xbrlDoc)
+  mounted () {
+    this.loadData()
   },
-  methods: {}
+  methods: {
+    async loadData () {
+      const year = this.$route.query.tahun
+      const idRegion = this.$route.params.id
+      const url = `/reports/xbrl/${year}/${idRegion}.xbrl`
+      this.xbrlDoc = await this.loadXBRL(url)
+      this.entityName = evaluateXPathToString("//general/info[@name='Nama Entitas']", this.xbrlDoc)
+
+      setTimeout(() => {
+        const entities = this.$store.getters.getEntities
+        this.availableYear = entities.find(item => item.id === parseInt(idRegion)).years
+        this.year = evaluateXPathToString("//general/info[@name='Tahun Anggaran']", this.xbrlDoc)
+      }, 500)
+    }
+  }
 }
 </script>
 
