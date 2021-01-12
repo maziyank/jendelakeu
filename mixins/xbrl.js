@@ -19,8 +19,7 @@ export default {
       }
       return codification[code]
     },
-
-    RasioKeserasian (doc) {
+    RasioAktivitas (doc) {
       return evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Belanja Operasi"]/account/number())', doc) /
         evaluateXPathToNumber('sum(//lra/heading[@name="Belanja"]/subheading/account/number())', doc)
     },
@@ -44,6 +43,5 @@ export default {
       return evaluateXPathToNumber('sum(//lra/heading[@name="Belanja"]/subheading/account/number())', doc) /
       (-1 * evaluateXPathToNumber('sum(//lra/heading[@name="Pendapatan"]/subheading/account/number())', doc))
     }
-
   }
 }

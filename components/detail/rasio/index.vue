@@ -42,9 +42,9 @@ export default {
     refreshData () {
       this.ratios = [
         {
-          title: 'Rasio Keserasian',
-          description: 'Rasio Keserasian menggambarkan bagaimana pemerintah daerah memprioritaskan alokasi dananya pada Belanja Operasi dan Belanja Modal secara optimal',
-          value: this.RasioKeserasian(this.doc),
+          title: 'Rasio Aktifitas',
+          description: 'Rasio Aktifitas menggambarkan bagaimana pemerintah daerah menggunakan alokasi dananya untuk kegiatan rutin',
+          value: this.RasioAktivitas(this.doc),
           color: '#f2dd6e'
         },
         {
