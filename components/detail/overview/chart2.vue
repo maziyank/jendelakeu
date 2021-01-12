@@ -39,7 +39,7 @@ export default {
             label (tooltipItem, data) {
               const dataset = data.datasets[tooltipItem.datasetIndex]
               const total = dataset.data.reduce(function (previousValue, currentValue) {
-                return previousValue + currentValue
+                return parseFloat(previousValue) + parseFloat(currentValue)
               })
               const currentValue = dataset.data[tooltipItem.index]
               const percentage = Math.floor(((currentValue / total) * 100) + 0.5)
