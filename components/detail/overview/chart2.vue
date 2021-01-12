@@ -56,7 +56,7 @@ export default {
   methods: {
     refreshData () {
       this.chartData.labels = this.items.map(x => x.name)
-      this.chartData.datasets[0].data = this.items.map(x => x.value)
+      this.chartData.datasets[0].data = this.items.map(x => x.value.toFixed(2))
       this.renderChart(this.chartData, this.options)
     }
   }

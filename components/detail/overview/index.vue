@@ -16,7 +16,7 @@
             <p class="subtitle">
               Komposisi Aset
             </p>
-            <chart-2 :items="aset" class="box" />
+            <chart-2 :items="aset" />
           </div>
         </article>
       </div>
@@ -35,7 +35,7 @@
           <div class="tile is-parent">
             <article class="tile is-child box">
               <p class="subtitle">
-                Pendapatan
+                Pendapatan (Dalam Miliar Rupiah)
               </p>
               <div class="content">
                 <chart-1 :items="pendapatan" />
@@ -45,7 +45,7 @@
           <div class="tile is-6 is-parent">
             <article class="tile is-child box">
               <p class="subtitle">
-                Belanja
+                Belanja (Dalam Miliar Rupiah)
               </p>
               <div class="content">
                 <chart-1 :items="belanja" />

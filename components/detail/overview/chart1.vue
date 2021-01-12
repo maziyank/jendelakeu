@@ -12,7 +12,7 @@ export default {
         datasets: [
           {
             label: 'Realisasi',
-            backgroundColor: 'rgba(0, 0, 255, 0.5)',
+            backgroundColor: '#2B3A67',
             borderWidth: 1,
             data: [],
             xAxisID: 'bar-x-axis1',
@@ -20,7 +20,7 @@ export default {
           },
           {
             label: 'Anggaran',
-            backgroundColor: 'rgba(0, 0, 0, 0.2)',
+            backgroundColor: '#ffc482',
             borderWidth: 1,
             data: [],
             xAxisID: 'bar-x-axis2'
@@ -33,12 +33,12 @@ export default {
           xAxes: [{
             stacked: true,
             id: 'bar-x-axis1',
-            barThickness: 30
+            barThickness: 50
           }, {
             display: false,
             stacked: true,
             id: 'bar-x-axis2',
-            barThickness: 50,
+            barThickness: 80,
             // these are needed because the bar controller defaults set only the first x axis properties
             type: 'category',
             categoryPercentage: 0.8,
@@ -65,8 +65,8 @@ export default {
   methods: {
     refreshData () {
       this.lineData.labels = this.items.map(x => x.name)
-      this.lineData.datasets[0].data = this.items.map(x => x.value)
-      this.lineData.datasets[1].data = this.items.map(x => x.budget)
+      this.lineData.datasets[0].data = this.items.map(x => x.value.toFixed(2))
+      this.lineData.datasets[1].data = this.items.map(x => x.budget.toFixed(2))
       this.renderChart(this.lineData, this.options)
     }
   }
