@@ -1,7 +1,7 @@
 <template>
   <article class="media">
     <figure class="media-left">
-      <gauge :title="title" class="gauge" :value="value * 100 " :inner-text="`${value.toFixed(2) * 100} %` " :color="color"/>
+      <gauge :title="title" class="gauge" :value="value " :inner-text="`${value.toFixed(2)} %` " :color="color"/>
     </figure>
     <div class="media-content">
       <div class="content">
