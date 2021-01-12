@@ -20,28 +20,99 @@ export default {
       return codification[code]
     },
     RasioAktivitas (doc) {
-      return evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Belanja Operasi"]/account/number())', doc) /
-        evaluateXPathToNumber('sum(//lra/heading[@name="Belanja"]/subheading/account/number())', doc)
+      return (
+        evaluateXPathToNumber(
+          'sum(//lra/heading/subheading[@name="Belanja Operasi"]/account/number())',
+          doc
+        ) /
+        evaluateXPathToNumber(
+          'sum(//lra/heading[@name="Belanja"]/subheading/account/number())',
+          doc
+        )
+      )
     },
     RasioBelanjaModal (doc) {
-      return evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Belanja Modal"]/account/number())', doc) /
-        evaluateXPathToNumber('sum(//lra/heading[@name="Belanja"]/subheading/account/number())', doc)
+      return (
+        evaluateXPathToNumber(
+          'sum(//lra/heading/subheading[@name="Belanja Modal"]/account/number())',
+          doc
+        ) /
+        evaluateXPathToNumber(
+          'sum(//lra/heading[@name="Belanja"]/subheading/account/number())',
+          doc
+        )
+      )
     },
     RasioKemandirian (doc) {
-      return evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/number())', doc) /
-        evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Pendapatan Transfer"]/account/number())', doc)
+      return (
+        evaluateXPathToNumber(
+          'sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/number())',
+          doc
+        ) /
+        evaluateXPathToNumber(
+          'sum(//lra/heading/subheading[@name="Pendapatan Transfer"]/account/number())',
+          doc
+        )
+      )
     },
     RasioEfektivitas (doc) {
-      return evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/number())', doc) /
-        evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/@budget/number())', doc)
+      return (
+        evaluateXPathToNumber(
+          'sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/number())',
+          doc
+        ) /
+        evaluateXPathToNumber(
+          'sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/@budget/number())',
+          doc
+        )
+      )
     },
     RasioPertumbuhan (doc) {
-      return evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/number())', doc) /
-      evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/@prevValue/number())', doc)
+      return (
+        evaluateXPathToNumber(
+          'sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/number())',
+          doc
+        ) /
+        evaluateXPathToNumber(
+          'sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/@prevValue/number())',
+          doc
+        )
+      )
     },
     RasioEfisiensi (doc) {
-      return evaluateXPathToNumber('sum(//lra/heading[@name="Belanja"]/subheading/account/number())', doc) /
-      (-1 * evaluateXPathToNumber('sum(//lra/heading[@name="Pendapatan"]/subheading/account/number())', doc))
+      return (
+        evaluateXPathToNumber(
+          'sum(//lra/heading[@name="Belanja"]/subheading/account/number())',
+          doc
+        ) /
+        (-1 *
+          evaluateXPathToNumber(
+            'sum(//lra/heading[@name="Pendapatan"]/subheading/account/number())',
+            doc
+          ))
+      )
+    },
+    RasioDSCR (doc) {
+      // DSCR = (PAD + Dana Bagi Hasil + DAU – Belanja Wajib) div (Angsuran Pokok Pinjaman + Bunga + Biaya Lain)
+      return ((
+        evaluateXPathToNumber(
+          'sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/number())',
+          doc
+        ) +
+        evaluateXPathToNumber(
+          'sum(//lra/heading/subheading[@name="Pendapatan Transfer"]/account/number())',
+          doc
+        ) -
+        evaluateXPathToNumber(
+          'sum(//lra/heading/subheading/account[@name="Belanja Pegawai"]/number())',
+          doc
+        )) /
+          (-1 *
+            evaluateXPathToNumber(
+              'sum(//lra/heading/subheading/account[@name="Belanja Bunga"]/number())',
+              doc
+            ))
+      )
     }
   }
 }

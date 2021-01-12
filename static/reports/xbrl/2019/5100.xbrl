@@ -83,8 +83,8 @@
 				<account code="51040000" name="Belanja Subsidi" prevValue="-9566400000" budget="-10000000000">
 					-9903628000
 				</account>
-				<account code="51050000" name="Belanja Hibah" prevValue="-1095268169788" budget="-1125995849719.81">
-					-1040184587070
+				<account code="51050000" name="Belanja Hibah" prevValue="-1095268169788" budget="-1125995849719">
+					-1040184587070.81
 				</account>
 				<account code="51060000" name="Belanja Bantuan Sosial" prevValue="-25019000000" budget="-9430000000">
 					-9094500000
@@ -118,15 +118,15 @@
 		</heading>
 		<heading code="54000000" name="Belanja Transfer">
 			<subheading code="54010000" name="Transfer Bagi Hasil Pendapatan">
-				<account code="54010100" name="Transfer Bagi Hasil Pajak" prevValue="-1207451785444" budget="1339553585283.20">
+				<account code="54010100" name="Transfer Bagi Hasil Pajak" prevValue="-1207451785444" budget="-1339553585283.20">
 					-1302125715639.33
 				</account>
 			</subheading>
 			<subheading code="54020000" name="Belanja Bantuan Keuangan">
-				<account code="54020100" name="Bantuan Keuangan ke Pemerintah Daerah Lainnya" prevValue="-186775668060" budget="370033724798">
+				<account code="54020100" name="Bantuan Keuangan ke Pemerintah Daerah Lainnya" prevValue="-186775668060" budget="-370033724798">
 					-330260987829.21
 				</account>
-				<account code="54020100" name="Bantuan Keuangan ke Desa" prevValue="-441322088750" budget="483773275000">
+				<account code="54020100" name="Bantuan Keuangan ke Desa" prevValue="-441322088750" budget="-483773275000">
 					-479795535000
 				</account>
 				<account code="" name="Bantuan Keuangan Lainnya" prevValue="-2442633600" budget="-2506067256">
