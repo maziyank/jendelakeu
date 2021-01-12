@@ -7,11 +7,19 @@
         </h2>
       </div>
       <div class="column is-two-fifth">
-        <b-select v-model="year" rounded placeholder="Pilih Tahun" icon="calendar" style="float:right">
-          <option v-for="option in availableYear" :key="option" :value="option">
-            {{ option }}
-          </option>
-        </b-select>
+        <div class="buttons" style="float:right">
+          <b-button type="is-normal" rounded style="margin-bottom:0" icon-left="download" @click="downloadUrl(url)">
+            Download Data
+          </b-button>
+          <b-button type="is-normal" rounded style="margin-bottom:0" icon-left="file-pdf" @click="downloadUrl(sourcefile)">
+            Data Asli (PDF)
+          </b-button>
+          <b-select v-model="year" rounded placeholder="Pilih Tahun" icon="calendar">
+            <option v-for="option in availableYear" :key="option" :value="option">
+              {{ option }}
+            </option>
+          </b-select>
+        </div>
       </div>
     </div>
     <div class="columns">
@@ -56,6 +64,8 @@ export default {
   data () {
     return {
       xbrlDoc: {},
+      url: '',
+      sourcefile: '',
       activeTab: 0,
       idRegion: '',
       entityName: '',
@@ -83,15 +93,19 @@ export default {
     async loadData () {
       const year = this.$route.query.tahun
       const idRegion = this.$route.params.id
-      const url = `/reports/xbrl/${year}/${idRegion}.xbrl`
-      this.xbrlDoc = await this.loadXBRL(url)
+      this.url = `/reports/xbrl/${year}/${idRegion}.xbrl`
+      this.xbrlDoc = await this.loadXBRL(this.url)
       this.entityName = evaluateXPathToString("//general/info[@name='Nama Entitas']", this.xbrlDoc)
+      this.sourcefile = evaluateXPathToString("//general/info[@name='Sumber Data']", this.xbrlDoc)
 
       setTimeout(() => {
         const entities = this.$store.getters.getEntities
         this.availableYear = entities.find(item => item.id === parseInt(idRegion)).years
         this.year = evaluateXPathToString("//general/info[@name='Tahun Anggaran']/text()", this.xbrlDoc)
-      }, 500)
+      }, 1000)
+    },
+    downloadUrl (url) {
+      window.open(url, '_blank')
     }
   }
 }
