@@ -38,8 +38,8 @@ export default {
   },
   methods: {
     refreshData () {
-      this.chartData.labels = this.ratios.filter(x => x.value <= 1).map(x => x.title)
-      this.chartData.datasets[0].data = this.ratios.filter(x => x.value <= 1).map(x => x.value.toFixed(2))
+      this.chartData.labels = this.ratios.map(x => x.title)
+      this.chartData.datasets[0].data = this.ratios.map(x => x.value.toFixed(2))
     }
   }
 }
