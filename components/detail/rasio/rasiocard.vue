@@ -1,7 +1,13 @@
 <template>
   <article class="media">
-    <figure class="media-left">
-      <gauge :title="title" class="gauge" :value="value " :inner-text="`${value.toFixed(2)} %` " :color="color"/>
+    <figure v-if="gauge" class="media-left">
+      <gauge
+        :title="title"
+        class="gauge"
+        :value="value"
+        :inner-text="`${value.toFixed(2)} %`"
+        :color="color"
+      />
     </figure>
     <div class="media-content">
       <div class="content">
@@ -24,6 +30,11 @@ export default {
       type: String,
       required: true,
       default: ''
+    },
+    gauge: {
+      type: Boolean,
+      required: true,
+      default: true
     },
     value: {
       type: Number,

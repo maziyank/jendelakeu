@@ -152,7 +152,7 @@
 			</subheading>
 		</heading>
 	</lra>
-	<SAL>
+	<sal>
 		<heading code="-" name="Saldo Anggaran Lebih Awal">
 			<subheading code="-" name="Saldo Anggaran Lebih Awal">
 				<account code="-" name="Saldo Anggaran Lebih Awal" prevValue="408311832886">
@@ -181,7 +181,7 @@
 				</account>
 			</subheading>
 		</heading>
-	</SAL>
+	</sal>
 	<lo>
 		<heading code="70000000" name="Pendapatan">
 			<subheading code="71000000" name="Pendapatan Asli Daerah">
