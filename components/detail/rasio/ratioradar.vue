@@ -15,10 +15,10 @@ export default {
         labels: ['Efisiensi', 'Rasio Lancar', 'Kemandirian Daerah', 'Solvabilitas', 'Keseimbangan Primer', 'DBE Ratio'],
         datasets: [
           {
-            label: 'Rasio (Skala 0 - 1)',
+            label: 'Rasio',
             fill: true,
-            backgroundColor: 'rgba(179,181,198,0.2)',
-            borderColor: 'rgba(179,181,198,1)',
+            backgroundColor: '#b3af8f',
+            borderColor: '#ffc482',
             pointBorderColor: '#fff',
             pointBackgroundColor: 'rgba(179,181,198,1)',
             data: [0.77, 0.61, 0.69, 0.62, 0.82, 0.6]
