@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <p class="subtitle">
+    <p class="subtitle has-text-weight-semibold">
       Profil Daerah
     </p>
     <div class="b-table">

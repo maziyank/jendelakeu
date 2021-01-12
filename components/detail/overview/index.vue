@@ -13,7 +13,7 @@
         <article class="tile is-child">
           <profil :items="profilData" />
           <div class="box">
-            <p class="subtitle">
+            <p class="subtitle has-text-weight-semibold">
               Komposisi Aset
             </p>
             <chart-2 :items="aset" />
@@ -34,7 +34,7 @@
         <div class="tile">
           <div class="tile is-parent">
             <article class="tile is-child box">
-              <p class="subtitle">
+              <p class="subtitle has-text-weight-semibold">
                 Pendapatan (Dalam Miliar Rupiah)
               </p>
               <div class="content">
@@ -44,7 +44,7 @@
           </div>
           <div class="tile is-6 is-parent">
             <article class="tile is-child box">
-              <p class="subtitle">
+              <p class="subtitle has-text-weight-semibold">
                 Belanja (Dalam Miliar Rupiah)
               </p>
               <div class="content">
