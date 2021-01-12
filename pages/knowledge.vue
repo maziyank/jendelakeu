@@ -39,7 +39,7 @@
     </p>
     <br>
     <br>
-    <p>  Di Indonesia, XBRL diterapkan di Bursa Efek Indonesia. Sebagai referensi silahkan membaca <a href="https://www.idx.co.id/perusahaan-tercatat/xbrl/"> <b> referensi ini </b> </a>.</p>
+    <p>  Di Indonesia, XBRL diterapkan di Bursa Efek Indonesia. Sebagai referensi silahkan membaca <a target="_blank" href="https://www.idx.co.id/perusahaan-tercatat/xbrl/"> <b> referensi ini </b> </a>.</p>
     <br>
     <h2 class="title is-4 has-text-grey">
       XBRL untuk Sektor Pemerintah
