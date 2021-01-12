@@ -77,7 +77,7 @@ export default {
         { title: 'Neraca', component: 'Neraca', icon: 'scale-balance' },
         { title: 'Realisasi Anggaran', component: 'Anggaran', icon: 'beaker-check' },
         { title: 'Operasional', component: 'Operasional', icon: 'account-group' },
-        { title: 'Arus Kas', component: 'Operasional', icon: 'cash' },
+        // { title: 'Arus Kas', component: 'Operasional', icon: 'cash' },
         { title: 'Ekuitas', component: 'Ekuitas', icon: 'bank' },
         { title: 'S A L', component: 'Sal', icon: 'wallet-plus' }
       ]

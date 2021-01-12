@@ -47,7 +47,7 @@
 				<account code="41020000" name="Pendapatan Retribusi Daerah" prevValue="578555603994" budget="710131000000">
 					587384031230
 				</account>
-				<account code="41030000" name="Pendapatan Hasil Pengelolaan Kekayaan Daerah yang Dipisahkan" prevValue="618380216460" budget="44540000000000">
+				<account code="41030000" name="Pendapatan Hasil Pengelolaan Kekayaan Daerah yang Dipisahkan" prevValue="592956276353" budget="618380216460">
 					619456466460
 				</account>
 				<account code="41040000" name="Lain-lain PAD yang sah" prevValue="4616712395152" budget="4976570675006">
@@ -150,19 +150,19 @@
 				<account code="62010000" name="Pembentukan Dana Cadangan" prevValue="-76817812254" budget="0">
 					-95110472253
 				</account>
-				<account code="62020000" name="Penyertaan Modal Pemerintah Daerah" prevValue="-7395509521612" budget="8602612000000">
+				<account code="62020000" name="Penyertaan Modal Pemerintah Daerah" prevValue="-7395509521612" budget="-8602612000000">
 					-7402197169911
 				</account>
-				<account code="62030100" name="Pembayaran Pokok Pinjaman Dalam Negeri- Pemerintah Pusat" prevValue="-33629623430" budget="33650000000">
+				<account code="62030100" name="Pembayaran Pokok Pinjaman Dalam Negeri- Pemerintah Pusat" prevValue="-33629623430" budget="-33650000000">
 					-33629623430
 				</account>
 				<account code="62030300" name="Pembayaran Pokok Pinjaman Dalam Negeri- Lembaga Keuangan Bank" prevValue="0" budget="0">
 					-53918320859
 				</account>
-				<account code="62040300" name="Pemberian Pinjaman kepada Perusahaan Daerah" prevValue="0" budget="350000000000">
+				<account code="62040300" name="Pemberian Pinjaman kepada Perusahaan Daerah" prevValue="0" budget="-350000000000">
 					-350000000000
 				</account>
-				<account code="62050100" name="Pengeluaran Pembiayaan BLUD" prevValue="0" budget="48624734096">
+				<account code="62050100" name="Pengeluaran Pembiayaan BLUD" prevValue="0" budget="-48624734096">
 					0
 				</account>
 			</subheading>
@@ -491,9 +491,6 @@
 					<account code="-" name="Penyisihan Piutang BLUD" prevValue="-55071658904">
 						-57474159774
 					</account>
-					<account code="-" name="Penyisihan Dana Bergulir Tak Tertagih" prevValue="-555601184047">
-						-555072707626
-					</account>
 					<account code="-" name="Penyisihan Piutang Lain-lain PAD yang Sah Lainnya" prevValue="-42189626652">
 						-77009770678
 					</account>
@@ -517,10 +514,13 @@
 					<account code="-" name="Investasi Permanen" prevValue="51957108465789">
 						61060348693774
 					</account>
-				</subheading>			
+				</subheading>
 				<subheading code="12000000" name="Investasi Nonpermanen">
 					<account code="-" name="Investasi dalam Dana Bergulir" prevValue="556775855728">
 						905058191151
+					</account>
+					<account code="-" name="Penyisihan Dana Bergulir Tak Tertagih" prevValue="-555601184047">
+						-555072707626
 					</account>
 				</subheading>
 			</heading>
@@ -549,14 +549,14 @@
 					<account code="13070100" name="Akumulasi Penyusutan Peralatan dan Mesin" prevValue="-16960005516840">
 						-20660928663801
 					</account>
-					<account code="13070200" name="Akumulasi Penyusutan Gedung dan Bangunan" prevValue="-17848639792519">
-						-16622961008537
+					<account code="13070200" name="Akumulasi Penyusutan Gedung dan Bangunan" prevValue="-16622961008537">
+						-17848639792519
 					</account>
-					<account code="13070300" name="Akumulasi Penyusutan Jalan, Irigasi, dan Jaringan" prevValue="-18164966374149">
-						-17229653118106
+					<account code="13070300" name="Akumulasi Penyusutan Jalan, Irigasi, dan Jaringan" prevValue="-17229653118106">
+						-18164966374149
 					</account>
-					<account code="13070400" name="Akumulasi Penyusutan Aset Tetap Lainnya" prevValue="-267933575105">
-						-620146359568
+					<account code="13070400" name="Akumulasi Penyusutan Aset Tetap Lainnya" prevValue="-620146359568">
+						-267933575105
 					</account>
 				</subheading>
 			</heading>

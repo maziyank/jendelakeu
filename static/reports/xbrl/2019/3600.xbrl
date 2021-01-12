@@ -35,7 +35,7 @@
 			-
 		</info>
 		<info name="Sumber Data">
-			www.bantenprov.go.id
+			https://dmsppid.bantenprov.go.id/upload/dms/19/lhp-lkpd-provinsi-banten-ta-2019.pdf
 		</info>
 	</general>
 	<lra>
@@ -394,8 +394,8 @@
 					<account code="11100104" name="Penyisihan Piutang Lain-lain PAD yang sah" prevValue="-34660560">
 						-67248224
 					</account>
-					<account code="-" name="Penyisihan Piutang Lainnya" prevValue="6166958300">
-						6204800303
+					<account code="-" name="Penyisihan Piutang Lainnya" prevValue="-6166958300">
+						-6204800303
 					</account>
 					<account code="11100207" name="Penyisihan Bagian Lancar Tuntutan Perbendaharaan dan Ganti Rugi" prevValue="-958541334">
 						-1264263288
@@ -407,15 +407,15 @@
 					</account>
 				</subheading>
 				<subheading code="-" name="Persediaan">
-					<account code="11120000" name="Persediaan" prevValue="72889917564">
-						148097963865
+					<account code="11120000" name="Persediaan" prevValue="148097963865">
+						72889917564
 					</account>
 				</subheading>
 			</heading>
 			<heading code="12000000" name="Investasi Jangka Panjang">
 				<subheading code="12000000" name="Investasi Permanen">
-					<account code="-" name="Penyertaan Modal Pemerintah Daerah" prevValue="549592634658">
-						897692425502
+					<account code="-" name="Penyertaan Modal Pemerintah Daerah" prevValue="897692425502">
+						549592634658
 					</account>
 				</subheading>
 			</heading>
@@ -441,7 +441,7 @@
 					</account>
 				</subheading>
 				<subheading code="13070000" name="Akumulasi Penyusutan Aset Tetap">
-					<account code="13070100" name="Akumulasi Penyusutan Aset Tetap" prevValue="-597281371803">
+					<account code="13070100" name="Akumulasi Penyusutan Aset Tetap" prevValue="-5972813718063">
 						-7203165183008
 					</account>
 				</subheading>
@@ -460,8 +460,8 @@
 					<account code="15040100" name="Aset Lain-lain" prevValue="711830545226">
 						606566649702
 					</account>
-					<account code="15040100" name="Akumulasi Penyusutan Aset Lain-lain" prevValue="435297267512">
-						361399410950
+					<account code="15040100" name="Akumulasi Penyusutan Aset Lain-lain" prevValue="-435297267512">
+						-361399410950
 					</account>
 				</subheading>
 			</heading>

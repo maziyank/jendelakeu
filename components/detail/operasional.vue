@@ -26,8 +26,10 @@ export default {
         dataTreeStartExpanded: [true, false, false],
         columns: [
           { title: 'Akun', headerSort: false, width: 400, field: 'account', headerHozAlign: 'left', hozAlign: 'left', headerTooltip: true },
-          { title: 'Jumlah (Rp)', headerSort: false, width: 300, field: 'value', headerHozAlign: 'right', hozAlign: 'right', formatter: 'money', formatterParams: this.RpFormatter, headerTooltip: true },
-          { title: 'Tahun Sebelumnya (Rp)', headerSort: false, width: 300, field: 'previous', headerHozAlign: 'right', hozAlign: 'right', formatter: 'money', formatterParams: this.RpFormatter, headerTooltip: true }
+          { title: 'Tahun Ini (Rp)', headerSort: false, width: 300, field: 'value', headerHozAlign: 'right', hozAlign: 'right', formatter: 'money', formatterParams: this.RpFormatter, headerTooltip: true },
+          { title: 'Tahun Sebelumnya (Rp)', headerSort: false, width: 300, field: 'previous', headerHozAlign: 'right', hozAlign: 'right', formatter: 'money', formatterParams: this.RpFormatter, headerTooltip: true },
+          { title: 'Perubahan (Rp)', headerSort: false, width: 300, field: 'change', headerHozAlign: 'right', hozAlign: 'right', formatter: 'money', formatterParams: this.RpFormatter, headerTooltip: true },
+          { title: 'Perubahan (%)', headerSort: false, width: 150, field: 'percent', headerHozAlign: 'right', hozAlign: 'right', formatter: 'money', formatterParams: this.RpFormatter, headerTooltip: true }
         ]
       }
     }
@@ -41,26 +43,38 @@ export default {
       return headings.map((heading) => {
         const value = evaluateXPathToNumber('sum(subheading/account/number())', heading)
         const previous = evaluateXPathToNumber('sum(subheading/account/@prevValue/number())', heading)
+        const change = value - previous
         const subheadings = evaluateXPathToNodes('subheading', heading)
+        const percent = (change / previous * 100).toFixed(2)
         return {
           account: evaluateXPathToString('@name', heading),
           value,
           previous,
+          change,
+          percent,
           _children: subheadings.map((subheading) => {
             const value2 = evaluateXPathToNumber('sum(account/number())', subheading)
             const previous2 = evaluateXPathToNumber('sum(account/@prevValue/number())', subheading)
+            const change2 = value2 - previous2
+            const percent2 = (change2 / previous2 * 100).toFixed(2)
             const accounts = evaluateXPathToNodes('account', subheading)
             return {
               account: evaluateXPathToString('@name', subheading),
               value: value2,
               previous: previous2,
+              change: change2,
+              percent: percent2,
               _children: accounts.map((account) => {
                 const value3 = evaluateXPathToNumber('sum(number())', account)
                 const previous3 = evaluateXPathToNumber('sum(@prevValue/number())', account)
+                const change3 = value3 - previous3
+                const percent3 = (change3 / previous3 * 100).toFixed(2)
                 return {
                   account: evaluateXPathToString('@name', account),
                   value: value3,
-                  previous: previous3
+                  previous: previous3,
+                  change: change3,
+                  percent: percent3
                 }
               })
             }
