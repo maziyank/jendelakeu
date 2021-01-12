@@ -12,6 +12,12 @@
       <div class="tile is-parent">
         <article class="tile is-child">
           <profil :items="profilData" />
+          <div class="box">
+            <p class="subtitle">
+              Komposisi Aset
+            </p>
+            <chart-2 :items="aset" class="box" />
+          </div>
         </article>
       </div>
       <div class="tile is-vertical is-8">
@@ -21,7 +27,7 @@
               <p class="title is-child is-6">
                 {{ gauge.title }}
               </p>
-              <gauge :title="gauge.title" :value="gauge.value" />
+              <gauge :title="gauge.title" :value="gauge.value" :color="gauge.color" />
             </article>
           </div>
         </div>
@@ -60,10 +66,11 @@ import cardstat from './cardstat'
 import profil from './profil'
 import gauge from './gauge'
 import Chart1 from './chart1.vue'
+import Chart2 from './chart2.vue'
 import xbrl from '~/mixins/xbrl'
 
 export default {
-  components: { cardstat, profil, Chart1, gauge },
+  components: { cardstat, profil, Chart1, Chart2, gauge },
   mixins: [xbrl],
   props: ['doc'],
   data () {
@@ -72,7 +79,8 @@ export default {
       gauges: [],
       topCards: [],
       pendapatan: [],
-      belanja: []
+      belanja: [],
+      aset: []
     }
   },
   watch: {
@@ -103,10 +111,10 @@ export default {
       })
 
       this.gauges = [
-        { title: 'Rasio Efektivitas', value: this.RasioEfektivitas(this.doc) },
-        { title: 'Rasio Belanja Modal', value: this.RasioBelanjaModal(this.doc) },
-        { title: 'Rasio Kemandirian', value: this.RasioKemandirian(this.doc) },
-        { title: 'Rasio Lancar', value: this.quickRatio(this.doc) }
+        { title: 'Rasio Efektivitas', value: this.RasioEfektivitas(this.doc), color: '#f95d6a' },
+        { title: 'Rasio Belanja Modal', value: this.RasioBelanjaModal(this.doc), color: '#2f4b7c' },
+        { title: 'Rasio Kemandirian', value: this.RasioKemandirian(this.doc), color: '#665191' },
+        { title: 'Rasio Lancar', value: this.quickRatio(this.doc), color: '#003f5c' }
       ]
 
       this.topCards = [
@@ -132,6 +140,15 @@ export default {
             name: evaluateXPathToString('@name', item),
             value: -1 * evaluateXPathToNumber('sum(account/number())', item) / 1000000000,
             budget: -1 * evaluateXPathToNumber('sum(account/@budget/number())', item) / 1000000000
+          }
+        }
+      )
+
+      this.aset = evaluateXPathToNodes('//neraca/group[@name="Aset"]/heading', this.doc).map(
+        (item) => {
+          return {
+            name: evaluateXPathToString('@name', item),
+            value: evaluateXPathToNumber('sum(subheading/account/number())', item) / 1000000000
           }
         }
       )
