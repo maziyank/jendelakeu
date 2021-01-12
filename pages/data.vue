@@ -22,8 +22,8 @@
       :to="`/detail/${report.id}?tahun=${report.years[0]}`"
     >
       <Card
+        :id="report.id"
         :title="report.title"
-        :image="report.image"
         :description="report.description"
       />
     </NuxtLink>

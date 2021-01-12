@@ -4,7 +4,7 @@
       <div class="media">
         <div class="media-left">
           <figure v-if="title" class="image is-48x48">
-            <img :src="image" alt="Kabupaten Tegal">
+            <img :src="`/reports/emblems/${id}.png`" alt="Kabupaten Tegal">
           </figure>
           <b-skeleton v-else circle width="64px" height="64px" />
         </div>
@@ -25,6 +25,6 @@
 
 <script>
 export default {
-  props: ['title', 'description', 'image', 'isLoading']
+  props: ['title', 'description', 'isLoading', 'id']
 }
 </script>

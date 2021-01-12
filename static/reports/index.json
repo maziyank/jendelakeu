@@ -1,51 +1,24 @@
 {
   "data": [{
-      "title": "DKI Jakarta",
+      "title": "Prov. DKI Jakarta",
       "description": "Pemerintah Provinsi DKI Jakarta",
       "file": "",
       "id": 3100,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Jakarta.svg/330px-Coat_of_arms_of_Jakarta.svg.png",
       "years": [2019]
     },
     {
-      "title": "Kab. Tangerang",
-      "description": "Pemerintah Kab. Tangerang, Banten",
-      "file": 3603,
-      "id": 1,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png",
-      "years": [2020, 2019, 2018]
+      "title": "Prov. Banten",
+      "description": "Pemerintah Provinsi Banten",
+      "file": "",
+      "id": 3600,
+      "years": [2019]
     },
     {
-      "title": "Kab.Kudus",
-      "description": "Pemerintah Kabupaten Kudus, Jawa Tengah",
+      "title": "Prov. Bali",
+      "description": "Pemerintah Provinsi Bali",
       "file": "",
-      "id": 2,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png",
-      "years": [2020, 2019, 2018]
-    },
-    {
-      "title": "Kab.Rembang",
-      "description": "Pemerintah Kabupaten Rembang, Jawa Tengah",
-      "file": "",
-      "id": 3,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png",
-      "years": [2020, 2019, 2018]
-    },
-    {
-      "title": "Kab.Tegal",
-      "description": "Pemerintah Kabupaten Tegal, Jawa Tengah",
-      "file": "",
-      "id": 4,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png",
-      "years": [2020, 2019, 2018]
-    },
-    {
-      "title": "Kab.Bogor",
-      "description": "Pemerintah Kabupaten Bogor, Jawa Barat",
-      "file": "",
-      "id": 5,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shield_of_Tegal_Regency.svg/1200px-Shield_of_Tegal_Regency.svg.png",
-      "years": [2020, 2019, 2018]
+      "id": 5100,
+      "years": [2019]
     }
   ]
 }
