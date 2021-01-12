@@ -48,7 +48,7 @@ export default {
           to: { name: 'data' }
         },
         {
-          title: 'Pusat Pengetahuan',
+          title: 'Sistem Pelaporan',
           to: { name: 'knowledge' }
         },
         {
