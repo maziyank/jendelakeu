@@ -44,7 +44,18 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxt/content',
+    'vue-currency-filter/nuxt',
+
+    // Or if you have custom options...
+    ['vue-currency-filter/nuxt', {
+      symbol: 'Rp',
+      thousandsSeparator: '.',
+      fractionCount: 2,
+      fractionSeparator: ',',
+      symbolPosition: 'front',
+      symbolSpacing: true
+    }]
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)

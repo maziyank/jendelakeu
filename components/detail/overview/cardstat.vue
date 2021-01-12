@@ -10,7 +10,7 @@
       </div>
       <div class="media-content">
         <p class="title is-4">
-          {{ value }}
+          {{ value | currency }}
         </p>
         <p class="subtitle is-6">
           {{ description }}
