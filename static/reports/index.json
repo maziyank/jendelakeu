@@ -1,9 +1,24 @@
 {
-  "data": [{
+  "data": [
+    {
+      "title": "Prov. Bali",
+      "description": "Pemerintah Provinsi Bali",
+      "file": "",
+      "id": 5100,
+      "years": [2019]
+    },
+    {
       "title": "Prov. DKI Jakarta",
       "description": "Pemerintah Provinsi DKI Jakarta",
       "file": "",
       "id": 3100,
+      "years": [2019]
+    },
+    {
+      "title": "Prov. Kalimantan Timur",
+      "description": "Pemerintah Provinsi Kalimantan Timur",
+      "file": "",
+      "id": 6400,
       "years": [2019]
     },
     {
@@ -12,13 +27,6 @@
       "file": "",
       "id": 3600,
       "years": [2019]
-    },
-    {
-      "title": "Prov. Bali",
-      "description": "Pemerintah Provinsi Bali",
-      "file": "",
-      "id": 5100,
-      "years": [2019]
-    }
+    }    
   ]
 }
