@@ -28,7 +28,8 @@ export default {
           { title: 'Akun', headerSort: false, width: 400, field: 'account', headerHozAlign: 'left', hozAlign: 'left', headerTooltip: true }, // never hide this column
           { title: 'Anggaran (Rp)', headerSort: false, width: 300, field: 'budget', formatter: 'money', formatterParams: this.RpFormatter, headerHozAlign: 'right', hozAlign: 'right', headerTooltip: true },
           { title: 'Realisasi (Rp)', headerSort: false, width: 300, field: 'value', headerHozAlign: 'right', hozAlign: 'right', formatter: 'money', formatterParams: this.RpFormatter, headerTooltip: true },
-          { title: 'Capaian (%)', headerSort: false, width: 200, field: 'percent', headerHozAlign: 'center', hozAlign: 'center', headerTooltip: true },
+          { title: 'Capaian (%)', headerSort: false, width: 100, formatter: 'number', field: 'percent', headerHozAlign: 'center', hozAlign: 'center', headerTooltip: true },
+          { title: 'Progress', headerSort: false, width: 50, formatter: 'progress', formatterParams: { color: ['red', 'orange', 'green'] }, field: 'percent', headerHozAlign: 'center', hozAlign: 'left', headerTooltip: true },
           { title: 'Tahun Sebelumnya (Rp)', headerSort: false, width: 300, field: 'previous', headerHozAlign: 'right', hozAlign: 'right', formatter: 'money', formatterParams: this.RpFormatter, headerTooltip: true }
         ]
       }
