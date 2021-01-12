@@ -3,7 +3,7 @@
     <div class="tile is-ancestor">
       <div v-for="(card, key) in topCards" :key="key" class="tile is-parent">
         <article class="tile is-child">
-          <cardstat :icon="card.icon" :description="card.title" :value="card.value" />
+          <cardstat :icon="card.icon" :description="card.title" :value="card.value" :type="card.type"/>
         </article>
       </div>
     </div>
@@ -118,10 +118,10 @@ export default {
       ]
 
       this.topCards = [
-        { title: 'Total Aset', icon: 'city', value: evaluateXPathToNumber('sum(//group[@name="Aset"]/heading/subheading/account/number())', this.doc) },
-        { title: 'Total Pendapatan', icon: 'offer', value: evaluateXPathToNumber('sum(//heading[@name="Pendapatan"]/subheading/account/number())', this.doc) },
-        { title: 'Total Belanja', icon: 'cart', value: -1 * evaluateXPathToNumber('sum(//heading[@name="Belanja"]/subheading/account/number())', this.doc) },
-        { title: 'Total Pembiayaan', icon: 'cash-multiple', value: evaluateXPathToNumber('sum(//heading[@name="Pembiayaan"]/subheading/account/number())', this.doc) }
+        { title: 'Total Aset', type: 'is-primary', icon: 'city', value: evaluateXPathToNumber('sum(//group[@name="Aset"]/heading/subheading/account/number())', this.doc) },
+        { title: 'Total Pendapatan', type: 'is-info', icon: 'offer', value: evaluateXPathToNumber('sum(//heading[@name="Pendapatan"]/subheading/account/number())', this.doc) },
+        { title: 'Total Belanja', type: 'is-warning', icon: 'cart', value: -1 * evaluateXPathToNumber('sum(//heading[@name="Belanja"]/subheading/account/number())', this.doc) },
+        { title: 'Total Pembiayaan', type: 'is-danger', icon: 'cash-multiple', value: evaluateXPathToNumber('sum(//heading[@name="Pembiayaan"]/subheading/account/number())', this.doc) }
       ]
 
       this.pendapatan = evaluateXPathToNodes('//lra/heading[@name="Pendapatan"]/subheading', this.doc).map(
