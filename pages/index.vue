@@ -12,7 +12,7 @@
           <b-field>
             <b-input
               v-model="keyword"
-              placeholder="Cari Entitas Pelaaporan Keuangan di sini"
+              placeholder="Cari Entitas Pelaporan Keuangan di sini"
               icon-clickable
               size="is-large"
               icon-right="magnify"
