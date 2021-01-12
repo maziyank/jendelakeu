@@ -61,9 +61,15 @@ export default {
         },
         {
           question:
+            'Bagaiamana jendelakeu mengubah laporan keungan dalam bentuk PDF ke dokumen terstruktur?',
+          answer:
+            'Kami sementara ini melakukan secara manual. Kami berencana untuk membuat sebuah tools untuk mempermudah proses ini di kemudian hari'
+        },
+        {
+          question:
             'Apakah saya bisa berkontribusi di platform ini?',
           answer:
-            'Kami membuka kesempatan siapapun untuk berkontribusi baik sebagai developer maupun pengolah data.'
+            'Kami membuka kesempatan siapapun untuk berkontribusi baik sebagai developer maupun pengolah data (data collector, data convertor, dan data validator).'
         }
       ]
     }
