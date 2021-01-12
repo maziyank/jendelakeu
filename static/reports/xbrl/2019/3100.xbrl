@@ -4,7 +4,9 @@
 		<info name="Nama Entitas">
 			Pemerintah Provinsi DKI Jakarta
 		</info>
-		<info name="Tahun Anggaran">2019</info>
+		<info name="Tahun Anggaran">
+			2019
+		</info>
 		<info name="Kode Daearah">
 			3100
 		</info>
@@ -511,12 +513,14 @@
 				</subheading>
 			</heading>
 			<heading code="12000000" name="Investasi Jangka Panjang">
+				<subheading code="12000000" name="Investasi Permanen">
+					<account code="-" name="Investasi Permanen" prevValue="51957108465789">
+						61060348693774
+					</account>
+				</subheading>			
 				<subheading code="12000000" name="Investasi Nonpermanen">
 					<account code="-" name="Investasi dalam Dana Bergulir" prevValue="556775855728">
 						905058191151
-					</account>
-					<account code="-" name="Investasi Permanen" prevValue="51957108465789">
-						61060348693774
 					</account>
 				</subheading>
 			</heading>
