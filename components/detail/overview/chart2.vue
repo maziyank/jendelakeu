@@ -14,13 +14,13 @@ export default {
             label: 'Komposisi Aset',
             data: [],
             backgroundColor: [
-              '#003f5c',
-              '#2f4b7c',
-              '#665191',
-              '#a05195',
-              '#d45087',
-              '#f95d6a',
-              '#ff7c43',
+              '#62929E',
+              '#f2dd6e',
+              '#E5B25D',
+              '#B87D4B',
+              '#523A34',
+              '#f2dd6e',
+              '#e5b25d',
               '#ffa600'
             ]
           }

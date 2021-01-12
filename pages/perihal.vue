@@ -1,49 +1,26 @@
 <template>
   <section class="section">
-    <h2 class="title is-3 has-text-grey">Perihal</h2>
+    <h2 class="title is-3 has-text-grey">
+      Perihal
+    </h2>
     <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem
-      Ipsum.
+      Jendelaku adalah platform terintegerasi yang mengumpulkan dan menyediakan
+      laporan keuangan pemerintah di Indonesia. Gagasan proyek ini adalah akibat
+      belum adanya portal informasi keuangan pemerintah yang dapat dengan mudah
+      diakss. Jendelaku berupaya menyajikan laporan keuangan pemerintah dengan
+      pendekatan baru yang lebih menarik. Kami menggunakan pendekatan dokumen
+      terstruktur <i>(structured document)</i> dalam menyajikan laporan
+      keuangan.
     </p>
-    <br />
+     </br>
     <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem
-      Ipsum.
+      Penyajian informasi keuangan dalam bentuk yang mudah diolah oleh instansi pemerintah tentu akan membawa dampak positif kepada para pemangku kepentingan dalam mengelola dan memanfaatkan informasi secara efektif dan efisien. Sebaliknya, laporan keuangan dengan kualitas informasi yang rendah akan menyulitkan para pemangku kepentingan yang menggunakan informasi tersebut. Hal tersebut akan sangat menghambat kinerja pemerintah dan para pemangku kepentingan seperti dalam pelaksanaan analisis dan evaluasi laporan keuangan
     </p>
-    <br />
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem
-      Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting
-      industry. Lorem Ipsum has been the industry's standard dummy text ever
-      since the 1500s, when an unknown printer took a galley of type and
-      scrambled it to make a type specimen book. It has survived not only five
-      centuries, but also the leap into electronic typesetting, remaining
-      essentially unchanged. It was popularised in the 1960s with the release of
-      Letraset sheets containing Lorem Ipsum passages, and more recently with
-      desktop publishing software like Aldus PageMaker including versions of
-      Lorem Ipsum.
-    </p>
+    </br>
+    </br>
+    <h4 class="title is-4 has-text-grey">
+      Tim Pengembang
+    </h4>
+    <p>Wahidin Squad : Bakhtiar Amaludin, Gede Yudi P, Sukirno.</p>
   </section>
 </template>
-

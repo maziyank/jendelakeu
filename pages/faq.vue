@@ -1,12 +1,14 @@
 <template>
   <section class="section">
-    <h2 class="title is-3 has-text-grey">FAQ</h2>
+    <h2 class="title is-3 has-text-grey">
+      FAQ
+    </h2>
 
     <b-collapse
-      class="card"
-      animation="slide"
       v-for="(collapse, index) of collapses"
       :key="index"
+      class="card"
+      animation="slide"
       :open="isOpen == index"
       @open="isOpen = index"
     >
@@ -15,7 +17,7 @@
           {{ collapse.question }}
         </p>
         <a class="card-header-icon">
-          <b-icon :icon="props.open ? 'menu-down' : 'menu-up'"> </b-icon>
+          <b-icon :icon="props.open ? 'menu-down' : 'menu-up'" />
         </a>
       </div>
       <div class="card-content">
@@ -29,72 +31,42 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       isOpen: 0,
       collapses: [
         {
           question:
-            "Apakah Laporan Keuangan yang ada disini telah di audit oleh BPK?",
+            'Laporan Keuangan apa yang disajikan di platform ini?',
           answer:
-            "Ya, Seluruh Laporan Keuangan yang ada disini telah divalidasi dan sesuai dengan hasil audit BP",
+            'Kmai menggunakan laporan keuangan audited dari BPK di platform ini'
         },
         {
           question:
-            "Apakah Laporan Keuangan yang ada disini telah di audit oleh BPK?",
+            'Laporan Keuangan jenis apa saja yang disajikan disini?',
           answer:
-            "Ya, Seluruh Laporan Keuangan yang ada disini telah divalidasi dan sesuai dengan hasil audit BP",
+            'Untuk sementara ini kami menyediakan seluruh jenis laporan keuangan kecuali arus kas dan CALK'
         },
         {
           question:
-            "Apakah Laporan Keuangan yang ada disini telah di audit oleh BPK?",
+            'Mengapa saya tidak menemukan laporan yang saya cari?',
           answer:
-            "Ya, Seluruh Laporan Keuangan yang ada disini telah divalidasi dan sesuai dengan hasil audit BP",
+            'Kami masih dalam proses collecting data sehingga belum semua laporan kami sediakan.'
         },
         {
           question:
-            "Apakah Laporan Keuangan yang ada disini telah di audit oleh BPK?",
+            'Apakah laporan keuangan yang disajikan kembali diperiksa validitas nilianya?',
           answer:
-            "Ya, Seluruh Laporan Keuangan yang ada disini telah divalidasi dan sesuai dengan hasil audit BP",
+            'Kami berusaha semaksimal mungkin laporan keuangan yang disajikan di platform ini sesuai aslinya. Namun dikarenakan kami masih menggunakan metode konversi manual maka terdapat kemungkinan ada kesalahan sehingga kami masih tetap menyediakan link ke laporan aslinya sebagai pembanding.'
         },
         {
           question:
-            "Apakah Laporan Keuangan yang ada disini telah di audit oleh BPK?",
+            'Apakah saya bisa berkontribusi di platform ini?',
           answer:
-            "Ya, Seluruh Laporan Keuangan yang ada disini telah divalidasi dan sesuai dengan hasil audit BP",
-        },
-        {
-          question:
-            "Apakah Laporan Keuangan yang ada disini telah di audit oleh BPK?",
-          answer:
-            "Ya, Seluruh Laporan Keuangan yang ada disini telah divalidasi dan sesuai dengan hasil audit BP",
-        },
-        {
-          question:
-            "Apakah Laporan Keuangan yang ada disini telah di audit oleh BPK?",
-          answer:
-            "Ya, Seluruh Laporan Keuangan yang ada disini telah divalidasi dan sesuai dengan hasil audit BP",
-        },
-        {
-          question:
-            "Apakah Laporan Keuangan yang ada disini telah di audit oleh BPK?",
-          answer:
-            "Ya, Seluruh Laporan Keuangan yang ada disini telah divalidasi dan sesuai dengan hasil audit BP",
-        },
-        {
-          question:
-            "Apakah Laporan Keuangan yang ada disini telah di audit oleh BPK?",
-          answer:
-            "Ya, Seluruh Laporan Keuangan yang ada disini telah divalidasi dan sesuai dengan hasil audit BP",
-        },
-        {
-          question:
-            "Apakah Laporan Keuangan yang ada disini telah di audit oleh BPK?",
-          answer:
-            "Ya, Seluruh Laporan Keuangan yang ada disini telah divalidasi dan sesuai dengan hasil audit BP",
-        },
-      ],
-    };
-  },
-};
+            'Kami membuka kesempatan siapapun untuk berkontribusi baik sebagai developer maupun pengolah data.'
+        }
+      ]
+    }
+  }
+}
 </script>
