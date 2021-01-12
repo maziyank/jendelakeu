@@ -10,7 +10,7 @@
         :scale-interval="1"
       >
         <div class="inner-text">
-          {{ value.toFixed(2) * 100 }} %
+          {{ (value * 100).toFixed(2) }} %
         </div>
       </vue-gauge>
     </client-only>
