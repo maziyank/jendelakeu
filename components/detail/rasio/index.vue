@@ -42,9 +42,9 @@ export default {
     refreshData () {
       this.ratios = [
         {
-          title: 'Rasio Lancar',
-          description: 'Rasio ini menunjukan kemampuan pemerintah untuk memenuhi kewajiban hutang jangka pendek untuk jangka waktu 12 bulan ke depan',
-          value: this.quickRatio(this.doc),
+          title: 'Rasio Keserasian',
+          description: 'Rasio Keserasian menggambarkan bagaimana pemerintah daerah memprioritaskan alokasi dananya pada Belanja Operasi dan Belanja Modal secara optimal',
+          value: this.RasioKeserasian(this.doc),
           color: '#f2dd6e'
         },
         {
@@ -64,6 +64,18 @@ export default {
           description: 'Rasio efektivitas menggambarkan kemampuan pemerintah daerah dalam merealisasikan pendapatan asli daerah yang direncanakan dibandingkan dengan target yang ditetapkan berdasarkan potensi riil daerah',
           value: this.RasioEfektivitas(this.doc),
           color: '#b87d4b'
+        },
+        {
+          title: 'Rasio Pertumbuhan',
+          description: 'Rasio pertumbuhan bermanfaat untuk mengatahui apakah pemerintah daerah dalam tahun anggaran bersangkutan atau selama beberapa periode anggaran',
+          value: this.RasioEfektivitas(this.doc),
+          color: '#cff27e'
+        },
+        {
+          title: 'Rasio Efisiensi',
+          description: 'Rasio Efisiensi Keuangan Daerah (REKD) menggambarkan perbandingan antara besarnya biaya yang dikeluarkan untuk memperoleh pendapatan dengan realisasi pendapatan yang diterima. Semakin kecil rasio efisiensi berarti kinerja pemerintahan semakin baik',
+          value: this.RasioEfisiensi(this.doc),
+          color: '#cff27e'
         }
       ]
     }

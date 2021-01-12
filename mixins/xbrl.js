@@ -20,9 +20,9 @@ export default {
       return codification[code]
     },
 
-    quickRatio (doc) {
-      return evaluateXPathToNumber('sum(//heading[@name="Aset Lancar"]/subheading/account/number())', doc) /
-        evaluateXPathToNumber('sum(//heading/subheading[@name="Kewajiban Jangka Pendek"]/account/number())', doc)
+    RasioKeserasian (doc) {
+      return evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Belanja Operasi"]/account/number())', doc) /
+        evaluateXPathToNumber('sum(//lra/heading[@name="Belanja"]/subheading/account/number())', doc)
     },
     RasioBelanjaModal (doc) {
       return evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Belanja Modal"]/account/number())', doc) /
@@ -30,11 +30,19 @@ export default {
     },
     RasioKemandirian (doc) {
       return evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/number())', doc) /
-        evaluateXPathToNumber('sum(//lra/heading[@name="Pendapatan"]/subheading/account/number())', doc)
+        evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Pendapatan Transfer"]/account/number())', doc)
     },
     RasioEfektivitas (doc) {
       return evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/number())', doc) /
         evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/@budget/number())', doc)
+    },
+    RasioPertumbuhan (doc) {
+      return evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/number())', doc) /
+      evaluateXPathToNumber('sum(//lra/heading/subheading[@name="Pendapatan Asli Daerah"]/account/@prevValue/number())', doc)
+    },
+    RasioEfisiensi (doc) {
+      return evaluateXPathToNumber('sum(//lra/heading[@name="Belanja"]/subheading/account/number())', doc) /
+      (-1 * evaluateXPathToNumber('sum(//lra/heading[@name="Pendapatan"]/subheading/account/number())', doc))
     }
 
   }

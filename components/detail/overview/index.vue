@@ -114,7 +114,7 @@ export default {
         { title: 'Rasio Efektivitas', value: this.RasioEfektivitas(this.doc), color: '#f95d6a' },
         { title: 'Rasio Belanja Modal', value: this.RasioBelanjaModal(this.doc), color: '#2f4b7c' },
         { title: 'Rasio Kemandirian', value: this.RasioKemandirian(this.doc), color: '#665191' },
-        { title: 'Rasio Lancar', value: this.quickRatio(this.doc), color: '#003f5c' }
+        { title: 'Rasio Keserasian', value: this.RasioKeserasian(this.doc), color: '#003f5c' }
       ]
 
       this.topCards = [
