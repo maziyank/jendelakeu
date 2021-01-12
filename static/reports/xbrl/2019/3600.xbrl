@@ -2,7 +2,7 @@
 <xml xmlns:xgrl="http://www.xbrl.org/2003/instance" version="1.0" encoding="UTF-8">
 	<general>
 		<info name="Nama Entitas">
-			Banten
+			Prov. Banten
 		</info>
 		<info name="Tahun Anggaran">
 			2019
@@ -50,8 +50,8 @@
 				<account code="41030000" name="Pendapatan Hasil Pengelolaan Kekayaan Daerah yang Dipisahkan" prevValue="51638634268" budget="55300000000">
 					53933548147
 				</account>
-				<account code="41040000" name="Lain-lain PAD yang sah" prevValue="231327263527" budget="364210412055">
-					226769601835
+				<account code="41040000" name="Lain-lain PAD yang sah" prevValue="231327263527.13" budget="364210412055">
+					226769601835.81
 				</account>
 			</subheading>
 			<subheading code="42000000" name="Pendapatan Transfer">
@@ -63,21 +63,21 @@
 				</account>
 			</subheading>
 			<subheading code="4300000" name="Lain-Lain Pendapatan Daerah yang Sah">
-				<account code="4310000" name="Pendapatan Hibah" prevValue="6616233739" budget="12460479921">
-					12086246181
+				<account code="4310000" name="Pendapatan Hibah" prevValue="6616233739.70" budget="12460479921">
+					12086246181.79
 				</account>
-				<account code="-" name="Pendapatan Lainnya" prevValue="6322424388" budget="0">
+				<account code="-" name="Pendapatan Lainnya" prevValue="6322424388.09" budget="0">
 					915164443
 				</account>
 			</subheading>
 		</heading>
 		<heading code="50000000" name="Belanja">
 			<subheading code="51000000" name="Belanja Operasi">
-				<account code="51010000" name="Belanja Pegawai" prevValue="-1739670891079" budget="-2437924067452">
-					-2157162222842
+				<account code="51010000" name="Belanja Pegawai" prevValue="-1739670891079.60" budget="-2437924067452">
+					-2161096908197
 				</account>
-				<account code="51020000" name="Belanja Barang dan Jasa" prevValue="-2136811744122" budget="-2946681524285">
-					-2635253355463
+				<account code="51020000" name="Belanja Barang dan Jasa" prevValue="-2136811744122.38" budget="-2946681524285">
+					-2635253355463.11
 				</account>
 				<account code="51050000" name="Belanja Hibah" prevValue="-2003400072531" budget="-2248572836000">
 					-2076201232968
@@ -90,17 +90,17 @@
 				<account code="52010000" name="Belanja Tanah" prevValue="-166192248784" budget="-458701331463">
 					-260112046598
 				</account>
-				<account code="52020000" name="Belanja Peralatan dan Mesin" prevValue="-277869730009" budget="-345944530493">
-					-292864633886
+				<account code="52020000" name="Belanja Peralatan dan Mesin" prevValue="-277869730009.67" budget="-345944530493">
+					-292864633886.30
 				</account>
-				<account code="52030000" name="Belanja Gedung dan Bangunan" prevValue="-349989592141" budget="-392690978973">
-					-266629624637
+				<account code="52030000" name="Belanja Gedung dan Bangunan" prevValue="-349989592141.32" budget="-392690978973">
+					-266629624637.58
 				</account>
-				<account code="52040000" name="Belanja Jalan, Irigasi, dan Jaringan" prevValue="-523388717694" budget="-492161646113">
-					-471989908650
+				<account code="52040000" name="Belanja Jalan, Irigasi, dan Jaringan" prevValue="-523388717694.93" budget="-492161646113">
+					-471989908650.27
 				</account>
-				<account code="52050000" name="Belanja Aset Tetap Lainnya" prevValue="-44730665643" budget="-81490374662">
-					-66239594488
+				<account code="52050000" name="Belanja Aset Tetap Lainnya" prevValue="-44730665643.44" budget="-81490374662">
+					-66239594488.43
 				</account>
 				<account code="-" name="Belanja Aset Lainnya" prevValue="-379950000" budget="1725030000">
 					-1484010000
@@ -132,8 +132,8 @@
 		</heading>
 		<heading code="60000000" name="Pembiayaan">
 			<subheading code="61000000" name="Penerimaan Pembiayaan">
-				<account code="61010000" name="Penggunaan SiLPA" prevValue="752409135894" budget="1079956142888">
-					1079956142888
+				<account code="61010000" name="Penggunaan SiLPA" prevValue="752409135894.14" budget="1079956142888">
+					1079956142888.47
 				</account>
 			</subheading>
 			<subheading code="62000000" name="Pengeluaran Pembiayaan">
@@ -146,22 +146,22 @@
 	<sal>
 		<heading code="-" name="saldo Anggaran Lebih Awal">
 			<subheading code="-" name="Saldo Anggaran Lebih Awal">
-				<account code="-" name="Saldo Anggaran Lebih Awal" prevValue="752409135894">
-					1079956142888
+				<account code="-" name="Saldo Anggaran Lebih Awal" prevValue="752409135894.14">
+					1079956142888.47
 				</account>
 			</subheading>
 		</heading>
 		<heading code="-" name="Penggunaan SAL sebagai Penerimaan Pembiayaan Tahun Berjalan">
 			<subheading code="-" name="Penggunaan SAL sebagai Penerimaan Pembiayaan Tahun Berjalan">
-				<account code="-" name="Penggunaan SAL sebagai Penerimaan Pembiayaan Tahun Berjalan" prevValue="-752409135894">
-					-1079956142888
+				<account code="-" name="Penggunaan SAL sebagai Penerimaan Pembiayaan Tahun Berjalan" prevValue="-752409135894.14">
+					-1079956142888.47
 				</account>
 			</subheading>
 		</heading>
 		<heading code="-" name="Sisa Lebih Pembiayaan Anggaran">
 			<subheading name="Sisa Lebih Pembiayaan Anggaran">
-				<account name="Sisa Lebih Pembiayaan Anggaran" prevValue="1077333521826">
-					957241169611
+				<account name="Sisa Lebih Pembiayaan Anggaran" prevValue="1077333521826.84">
+					957241169611.38
 				</account>
 			</subheading>
 		</heading>
@@ -174,7 +174,7 @@
 		</heading>
 		<heading code="-" name="Lain-lain">
 			<subheading name="Lain-lain">
-				<account name="Lain-lain" prevValue="2622621061">
+				<account name="Lain-lain" prevValue="2622621061.63">
 					0
 				</account>
 			</subheading>
@@ -348,120 +348,120 @@
 		<group code="10000000" name="Aset">
 			<heading code="11000000" name="Aset Lancar">
 				<subheading code="11010000" name="Kas dan Setara Kas">
-					<account code="11010100" name="Kas di Kas Daerah" prevValue="1035397695608">
-						913990250571
+					<account code="11010100" name="Kas di Kas Daerah" prevValue="1035397695608.70">
+						913990250571.15
 					</account>
-					<account code="11010300" name="Kas di Bendahara Pengeluaran" prevValue="1667947184">
-						4701020431
+					<account code="11010300" name="Kas di Bendahara Pengeluaran" prevValue="1667947184.21">
+						4701020431.99
 					</account>
 					<account code="11010200" name="Kas di Bendahara Penerimaan" prevValue="0">
 						0
 					</account>
-					<account code="11010400" name="Kas dan Setara Kas BLUD" prevValue="36083740873">
-						33913066878
+					<account code="11010400" name="Kas dan Setara Kas BLUD" prevValue="36083740873.79">
+						33913066878.57
 					</account>
-					<account code="11010700" name="Kas Lainnya di Bendahara BOS" prevValue="3994165882">
-						4690784260
+					<account code="11010700" name="Kas Lainnya di Bendahara BOS" prevValue="3994165882.31">
+						4690784260.58
 					</account>
-					<account code="11010700" name="Kas Lainnya" prevValue="3033405084">
-						1069327
+					<account code="11010700" name="Kas Lainnya" prevValue="3033405084.70">
+						1069327.09
 					</account>
 				</subheading>
 				<subheading code="-" name="Piutang">
 					<account code="11030000" name="Piutang Pajak Daerah" prevValue="61552345">
 						2196000
 					</account>
-					<account code="11040000" name="Piutang Retribusi" prevValue="355000000">
-						102256
+					<account code="11040000" name="Piutang Retribusi" prevValue="355000">
+						102256000
 					</account>
-					<account code="11060000" name="Piutang Lain-lain PAD yang sah" prevValue="6932112048">
+					<account code="11060000" name="Piutang Lain-lain PAD yang sah" prevValue="6932112048.03">
 						13478533600
 					</account>
 					<account code="-" name="Piutang Lainnya" prevValue="12333916600">
 						19902317200
 					</account>
-					<account code="11090401" name="Bagian Lancar Tuntutan Perbendaharaan dan Ganti Rugi" prevValue="1379160911">
-						4255066465
+					<account code="11090401" name="Bagian Lancar Tuntutan Perbendaharaan dan Ganti Rugi" prevValue="1379160911.30">
+						4255066465.88
 					</account>
 				</subheading>
 				<subheading code="-" name="Penyisihan Piutang">
-					<account code="11100101" name="Penyisihan Piutang Pajak Daerah" prevValue="-307761">
+					<account code="11100101" name="Penyisihan Piutang Pajak Daerah" prevValue="-307761.73">
 						-10980
 					</account>
 					<account code="11100102" name="Penyisihan Piutang Retribusi" prevValue="-1775">
 						-511280
 					</account>
-					<account code="11100104" name="Penyisihan Piutang Lain-lain PAD yang sah" prevValue="-34660560">
+					<account code="11100104" name="Penyisihan Piutang Lain-lain PAD yang sah" prevValue="-34660560.24">
 						-67248224
 					</account>
 					<account code="-" name="Penyisihan Piutang Lainnya" prevValue="-6166958300">
 						-6204800303
 					</account>
-					<account code="11100207" name="Penyisihan Bagian Lancar Tuntutan Perbendaharaan dan Ganti Rugi" prevValue="-958541334">
-						-1264263288
+					<account code="11100207" name="Penyisihan Bagian Lancar Tuntutan Perbendaharaan dan Ganti Rugi" prevValue="-958541334.33">
+						-1264263288.39
 					</account>
 				</subheading>
 				<subheading code="-" name="Beban Dibayar di Muka">
-					<account code="11110100" name="Beban Dibayar di Muka" prevValue="4160823359">
-						4546235714
+					<account code="11110100" name="Beban Dibayar di Muka" prevValue="4160823359.24">
+						4546235714.89
 					</account>
 				</subheading>
 				<subheading code="-" name="Persediaan">
-					<account code="11120000" name="Persediaan" prevValue="148097963865">
-						72889917564
+					<account code="11120000" name="Persediaan" prevValue="148097963865.92">
+						72889917564.02
 					</account>
 				</subheading>
 			</heading>
 			<heading code="12000000" name="Investasi Jangka Panjang">
 				<subheading code="12000000" name="Investasi Permanen">
-					<account code="-" name="Penyertaan Modal Pemerintah Daerah" prevValue="897692425502">
-						549592634658
+					<account code="-" name="Penyertaan Modal Pemerintah Daerah" prevValue="897692425502.98">
+						549592634658.79
 					</account>
 				</subheading>
 			</heading>
 			<heading code="130000000" name="Aset Tetap">
 				<subheading code="13000000" name="Aset Tetap">
-					<account code="13010000" name="Tanah" prevValue="8757076274950">
-						9052403084134
+					<account code="13010000" name="Tanah" prevValue="8757076274950.90">
+						9052403084134.88
 					</account>
-					<account code="13020000" name="Peralatan dan Mesin" prevValue="2233684989061">
-						2602209419458
+					<account code="13020000" name="Peralatan dan Mesin" prevValue="2233684989061.27">
+						2602209419458.86
 					</account>
-					<account code="13030000" name="Gedung dan Bangunan" prevValue="3155062834041">
-						3395633791512
+					<account code="13030000" name="Gedung dan Bangunan" prevValue="3155062834041.35">
+						3395633791512.89
 					</account>
-					<account code="13040100" name="Jalan, Irigasi, dan Jaringan" prevValue="6208827426277">
-						6712849408035
+					<account code="13040100" name="Jalan, Irigasi, dan Jaringan" prevValue="6208827426277.90">
+						6712849408035.87
 					</account>
-					<account code="13050000" name="Aset Tetap Lainnya" prevValue="143877783240">
-						233909430529
+					<account code="13050000" name="Aset Tetap Lainnya" prevValue="143877783240.11">
+						233909430529.20
 					</account>
-					<account code="13060000" name="Konstruksi Dalam Pengerjaan" prevValue="126825091870">
-						187503789399
+					<account code="13060000" name="Konstruksi Dalam Pengerjaan" prevValue="126825091870.44">
+						187503789399.00
 					</account>
 				</subheading>
 				<subheading code="13070000" name="Akumulasi Penyusutan Aset Tetap">
-					<account code="13070100" name="Akumulasi Penyusutan Aset Tetap" prevValue="-5972813718063">
-						-7203165183008
+					<account code="13070100" name="Akumulasi Penyusutan Aset Tetap" prevValue="-5972813718063.13">
+						-7203165183008.23
 					</account>
 				</subheading>
 			</heading>
 			<heading code="130000000" name="Aset Lainnya">
 				<subheading code="15000000" name="Aset Lainnya">
-					<account code="-" name="Tuntutan Ganti Rugi" prevValue="192845926">
+					<account code="-" name="Tuntutan Ganti Rugi" prevValue="192845926.17">
 						0
 					</account>
-					<account code="15010101" name="Aset Tidak Berwujud" prevValue="56837736016">
-						59114556516
+					<account code="15010101" name="Aset Tidak Berwujud" prevValue="56837736016.31">
+						59114556516.35
 					</account>
-					<account code="15050100" name="Akumulasi Amortisasi Aset Tidak Berwujud" prevValue="-33244067014">
-						-43443360446
+					<account code="15050100" name="Akumulasi Amortisasi Aset Tidak Berwujud" prevValue="-33244067014.39">
+						-43443360446.53
 					</account>
-					<account code="15040100" name="Aset Lain-lain" prevValue="711830545226">
-						606566649702
+					<account code="15040100" name="Aset Lain-lain" prevValue="711830545226.45">
+						606566649702.19
 					</account>
-					<account code="15040100" name="Akumulasi Penyusutan Aset Lain-lain" prevValue="-435297267512">
-						-361399410950
+					<account code="15040100" name="Akumulasi Penyusutan Aset Lain-lain" prevValue="-435297267512.74">
+						-361399410950.71
 					</account>
 				</subheading>
 			</heading>
@@ -469,14 +469,14 @@
 		<group code="20000000" name="Kewajiban">
 			<heading code="20000000" name="Kewajiban">
 				<subheading code="21000000" name="Kewajiban Jangka Pendek">
-					<account code="21010000" name="Utang PFK" prevValue="227395677">
+					<account code="21010000" name="Utang PFK" prevValue="227395677.24">
 						120444412
 					</account>
-					<account code="21050000" name="Pendapatan Diterima di Muka" prevValue="63593753">
-						16485041
+					<account code="21050000" name="Pendapatan Diterima di Muka" prevValue="63593753.42">
+						16485041.10
 					</account>
 					<account code="21060000" name="Utang Belanja" prevValue="265836204250">
-						257387447609
+						257387447609.61
 					</account>
 					<account code="21070000" name="Utang Jangka Pendek Lainnya" prevValue="2851321056">
 						0
@@ -487,8 +487,8 @@
 		<group code="30000000" name="Ekuitas">
 			<heading code="31000000" name="Ekuitas">
 				<subheading code="31010000" name="Ekuitas">
-					<account code="31010100" name="Ekuitas" prevValue="16827556753818">
-						16599186312418
+					<account code="31010100" name="Ekuitas" prevValue="16827556753818.90">
+						16599186312418.60
 					</account>
 				</subheading>
 			</heading>
