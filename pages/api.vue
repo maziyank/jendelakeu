@@ -5,7 +5,7 @@
     </h2>
    
     <p>
-        Laporan Keuangan yang ada di dataku dapat diakses langsung melalui API berikut: <br/>
+        Data Laporan Keuangan yang ada di Jendelakeu dapat diakses melalui API berikut: <br/>
         <table class="table">
             <thead>
                 <th>Deskripsi</th>
