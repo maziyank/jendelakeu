@@ -7,7 +7,7 @@
             class="logo"
             src="~/assets/jendelakeu.png"
             alt="Jendela Infomasi Keuangan Pemerintah"
-          >
+          />
         </b-navbar-item>
       </template>
       <template slot="end">
@@ -30,45 +30,49 @@
 </template>
 
 <script>
-import Footer from './Footer'
-import xbrl from '~/mixins/xbrl'
+import Footer from "./Footer";
+import xbrl from "~/mixins/xbrl";
 
 export default {
   components: { Footer },
   mixins: [xbrl],
-  data () {
+  data() {
     return {
       items: [
         {
-          title: 'Depan',
-          to: { name: 'index' }
+          title: "Depan",
+          to: { name: "index" }
         },
         {
-          title: 'Laporan Keuangan',
-          to: { name: 'data' }
+          title: "Laporan Keuangan",
+          to: { name: "data" }
         },
         {
-          title: 'Sistem Pelaporan',
-          to: { name: 'knowledge' }
+          title: "Sistem Pelaporan",
+          to: { name: "knowledge" }
         },
         {
-          title: 'FAQ',
-          to: { name: 'faq' }
+          title: "API",
+          to: { name: "api" }
         },
         {
-          title: 'Perihal',
-          to: { name: 'perihal' }
+          title: "FAQ",
+          to: { name: "faq" }
+        },
+        {
+          title: "Perihal",
+          to: { name: "perihal" }
         }
       ]
-    }
+    };
   },
-  async mounted () {
+  async mounted() {
     if (!this.$store.state.entities) {
-      const entities = await this.getReports()
-      this.$store.commit('setEntities', entities)
+      const entities = await this.getReports();
+      this.$store.commit("setEntities", entities);
     }
   }
-}
+};
 </script>
 
 <style scoped>
