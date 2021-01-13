@@ -145,7 +145,8 @@ export default {
         this.year = evaluateXPathToString(
           "//general/info[@name='Tahun Anggaran']/text()",
           this.xbrlDoc
-        );
+        ).trim();
+        console.log(this.year);
       }, 1000);
     },
     downloadUrl(url) {
