@@ -22,7 +22,7 @@
     "fontoxpath": "3.9.1",
     "nuxt": "^2.14.6",
     "nuxt-buefy": "^0.4.3",
-    "sass": "^1.32.2",
+    "sass": "^1.32.11",
     "sass-loader": "^10.1.0",
     "tabulator-tables": "^4.9.3",
     "vue-ads-table-tree": "^2.4.2",
