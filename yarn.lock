@@ -5416,10 +5416,12 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-fontoxpath@3.9.1:
-  version "3.9.1"
-  resolved "https://registry.yarnpkg.com/fontoxpath/-/fontoxpath-3.9.1.tgz#fc0361f41c6943a1a94d4e0d6b5b638cd2e36219"
-  integrity sha512-GGlV7PC8WvN9638O4WcW3f6ae/TF2ljz/o0sKOpvv6Ry4U5t9nWkbRiu0sNtlT28BN+leOUtvOQ8m0L6Okb3+Q==
+fontoxpath@3.18.0:
+  version "3.18.0"
+  resolved "https://registry.yarnpkg.com/fontoxpath/-/fontoxpath-3.18.0.tgz#ed557491945bf472e4faa16e4b1b6910480bcee9"
+  integrity sha512-YDTlq22O+/2Rs1aY2q5GzMzyIQSBUDFEAqI75kUVwLfNhYUGpaHssRVyGNIULBm9LrlK3HaCBrCyV9Md0fZ4tw==
+  dependencies:
+    xspattern "^2.0.0"
 
 for-in@^1.0.2:
   version "1.0.2"
@@ -9558,6 +9560,11 @@ prr@~1.0.1:
   resolved "https://registry.yarnpkg.com/prr/-/prr-1.0.1.tgz#d3fc114ba06995a45ec6893f484ceb1d78f5f476"
   integrity sha1-0/wRS6BplaRexok/SEzrHXj19HY=
 
+prsc@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/prsc/-/prsc-2.0.1.tgz#7b30cc33338b7625381c6ac5a0578bbce937b4c1"
+  integrity sha512-SC6yOsjsSRxPVo/3M6tMykFLCAWvzpCASNbHhkpXQX9expqWJ+GlrarhvF55OX0XwN2U/+b1vKPrhjrdT68dyw==
+
 pseudomap@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
@@ -12104,6 +12111,11 @@ which@^2.0.1, which@^2.0.2:
   dependencies:
     isexe "^2.0.0"
 
+whynot@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/whynot/-/whynot-4.0.0.tgz#d337ffc8b5f93daa317fec727d688a88ebc3fcf1"
+  integrity sha512-dnIPzjyDaTu1Yjv7koEu0cxKx7Zq9ZuXM7bO3ZvG5PNgFuMp7+E4+ZkVUo4Ei73Zixwu04ahOf58SPcH+KA4oQ==
+
 widest-line@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/widest-line/-/widest-line-3.1.0.tgz#8292333bbf66cb45ff0de1603b136b7ae1496eca"
@@ -12212,6 +12224,14 @@ xmlchars@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/xmlchars/-/xmlchars-2.2.0.tgz#060fe1bcb7f9c76fe2a17db86a9bc3ab894210cb"
   integrity sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==
+
+xspattern@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/xspattern/-/xspattern-2.0.0.tgz#900b35cd756aa7e27dab0e9a0682af855a6cd404"
+  integrity sha512-qLm7YxG2BV0GFYO9+PaILaTeYLFb72nRNkfYJBGvgMC6q8w8OXElNqMsYBlZGUlPUiUzk6edId7FWj+EZ2ltSQ==
+  dependencies:
+    prsc "^2.0.1"
+    whynot "^4.0.0"
 
 xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.2"
