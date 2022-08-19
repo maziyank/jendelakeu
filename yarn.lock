@@ -5416,10 +5416,13 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-fontoxpath@3.9.1:
-  version "3.9.1"
-  resolved "https://registry.yarnpkg.com/fontoxpath/-/fontoxpath-3.9.1.tgz#fc0361f41c6943a1a94d4e0d6b5b638cd2e36219"
-  integrity sha512-GGlV7PC8WvN9638O4WcW3f6ae/TF2ljz/o0sKOpvv6Ry4U5t9nWkbRiu0sNtlT28BN+leOUtvOQ8m0L6Okb3+Q==
+fontoxpath@3.27.0:
+  version "3.27.0"
+  resolved "https://registry.yarnpkg.com/fontoxpath/-/fontoxpath-3.27.0.tgz#d57b576d987d72e3d78b18a220997dfd4ee95d1e"
+  integrity sha512-9dgP+EpyZIfMrPulJWZkZE3huV7Xm96kl9jUArYOFv/OnVSzxitfRSAAujBqLtn1DBTLFNrEDPbyXPgTkV8l3A==
+  dependencies:
+    prsc "3.1.0"
+    xspattern "^2.0.0"
 
 for-in@^1.0.2:
   version "1.0.2"
@@ -9558,6 +9561,16 @@ prr@~1.0.1:
   resolved "https://registry.yarnpkg.com/prr/-/prr-1.0.1.tgz#d3fc114ba06995a45ec6893f484ceb1d78f5f476"
   integrity sha1-0/wRS6BplaRexok/SEzrHXj19HY=
 
+prsc@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/prsc/-/prsc-3.1.0.tgz#bb29769f975b631d391777c2ff204c2eafe2acdf"
+  integrity sha512-i+aCOusEuyI0mwxQ9+QGuBGZa9Jfe5c0DIGo959lY+V7WOHDvejW6CHc3KU6AVAqcfpS6nk8ZZj3bdGgVvvdKA==
+
+prsc@^3.1.1:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/prsc/-/prsc-3.3.0.tgz#1a9c73d0f43d675417ead1fd0b81247321f54890"
+  integrity sha512-NbKWn+lp/MQGx24Lz6th8ddV5FNZecdZZGmDIU+NoHMl4/6m4VDf1REhsdNGwpqO8vmvbS0KfY3JhMXhVnZSRw==
+
 pseudomap@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
@@ -12104,6 +12117,11 @@ which@^2.0.1, which@^2.0.2:
   dependencies:
     isexe "^2.0.0"
 
+whynot@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/whynot/-/whynot-4.0.1.tgz#2eef0d21a76330c5a4acd28d337e8a7cffabb161"
+  integrity sha512-wub3lnbs7WWbIGr0vySFzQRmcyahGgPQTyfb4qWUEbEO8ile5ch+juYpGLodyVW6k9/rrpzyqN4FYW1JTmo0cQ==
+
 widest-line@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/widest-line/-/widest-line-3.1.0.tgz#8292333bbf66cb45ff0de1603b136b7ae1496eca"
@@ -12212,6 +12230,14 @@ xmlchars@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/xmlchars/-/xmlchars-2.2.0.tgz#060fe1bcb7f9c76fe2a17db86a9bc3ab894210cb"
   integrity sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==
+
+xspattern@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/xspattern/-/xspattern-2.0.1.tgz#009143b35ac09cc1a85eb3d8ab20dbf6cf82f9e6"
+  integrity sha512-QiEAQlkGKT0h5kzaDHH4dajyHc25bUF+QJUuy4idmxHAqeyGm/MjK0NqX7s0L+alDk1CvdNl8dtOnI33R8W6dg==
+  dependencies:
+    prsc "^3.1.1"
+    whynot "^4.0.1"
 
 xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.2"
